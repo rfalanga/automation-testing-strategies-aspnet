@@ -1,6 +1,5 @@
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/knowyourtoolset/automation-testing-strategies/21) ![Azure DevOps tests](https://img.shields.io/azure-devops/tests/knowyourtoolset/automation-testing-strategies/21)
 
-
 # Automated Testing Strategies for ASP.NET Core
 
 ## Getting Started
@@ -63,7 +62,7 @@ For the learner:
 
 ## VS Code Setup
 
-RUnning in VS Code is a totally legitimate use-case for this solution and
+Running in VS Code is a totally legitimate use-case for this solution and
 repo.
 
 The same instructions above (Getting Started) apply here, but the following
@@ -122,14 +121,14 @@ docker pull mcr.microsoft.com/mssql/server
 docker run -d --name carvedrock-sqlserver -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Carvedr0ck!" -p 1433:1433 mcr.microsoft.com/mssql/server
 ```
 
-## Verifiying Emails
+## Verifying Emails
 
 The very simple email functionality is done using a template
 from [this GitHub repo](https://github.com/leemunroe/responsive-html-email-template)
 and the [smtp4dev](https://github.com/rnwood/smtp4dev)
 service that can easily run in a Docker container.
 
-There is a UI that you can naviagte to in your browser for
+There is a UI that you can navigate to in your browser for
 seeing the emails that works great.  If you use the `docker run` command
 that I have listed above, the UI is at
 [http://localhost:3000](http://localhost:3000).
@@ -146,7 +145,7 @@ GET http://localhost:3000/api/messages
 GET http://localhost:3000/api/messages/<message-guid>/html
 ```
 
-## Test Coverage 
+## Test Coverage
 
 To see test coverage for the inner loop tests you've written,
 you can use the default [**coverlet**](https://github.com/coverlet-coverage/coverlet) tool that is included with
@@ -175,8 +174,7 @@ following PowerShell command:
 gci -include TestResults,coverage -recurse | remove-item -force -recurse
 ```
 
-##  AngleSharp and UI Selectors
+## AngleSharp and UI Selectors
 
 - [AngleSharp](https://anglesharp.github.io/)
 - [Selectors Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors)
-
