@@ -1,0 +1,15 @@
+# Normalize all text files
+* text=auto
+
+# Binary files (do not diff/merge)
+*.png binary
+*.jpg binary
+*.exe binary
+
+# Make Git to better understand file formats for diffs
+*.json diff=json
+*.xml diff=xml
+
+# Files that should use specific line endings
+*.sh text eol=lf
+*.bat text eol=crlf
