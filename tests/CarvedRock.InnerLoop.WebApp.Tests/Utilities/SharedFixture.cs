@@ -23,8 +23,8 @@ public class SharedFixture : IAsyncLifetime
     public readonly Faker Faker = new();
     public List<ProductModel> OriginalProducts { get; private set; } = null!;
     public List<EmailModel> SentEmails { get; } = new();
-    
-    private static readonly List<string> _categories = ["boots", "equip", "kayak"];
+
+    private static readonly List<string> _categories = new() { "boots", "equip", "kayak" };
 
     public readonly Faker<ProductModel> ProductFaker = new Faker<ProductModel>()
         .RuleFor(p => p.Id, f => f.UniqueIndex + 1)
@@ -41,12 +41,20 @@ public class SharedFixture : IAsyncLifetime
         {
             try
             {
+                // Build smtp4dev container using explicit image-based constructor to avoid obsolete APIs
+                _emailContainer = new ContainerBuilder("rnwood/smtp4dev/smtp4dev:latest")
+                    .WithPortBinding(80, assignRandomHostPort: true)
+                    .WithPortBinding(25, assignRandomHostPort: true)
+                    .WithCleanUp(true)
+                    .Build();
+
                 await _emailContainer.StartAsync();
             }
             catch
             {
-                // fall back to in-process mocks if container start fails
+                // fall back to in-process mocks if container build/start fails
                 dockerAvailable = false;
+                _emailContainer = null;
             }
         }
 

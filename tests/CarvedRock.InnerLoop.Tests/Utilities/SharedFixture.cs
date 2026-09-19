@@ -47,12 +47,14 @@ public class SharedFixture : IAsyncLifetime
     private IContainer? _customSqlContainer;
 
     public string CustomSqlConnectionString =>
-        $"Server=127.0.0.1,{_customSqlContainer.GetMappedPublicPort(1433)};" +
-        "Database=carvedrock;" +
-        "User=sa;" +
-        "Password=Custom1zationRocks!;" +
-        "MultipleActiveResultSets=true;" +
-        "TrustServerCertificate=true;";
+        _customSqlContainer != null
+        ? $"Server=127.0.0.1,{_customSqlContainer.GetMappedPublicPort(1433)};" +
+          "Database=carvedrock;" +
+          "User=sa;" +
+          "Password=Custom1zationRocks!;" +
+          "MultipleActiveResultSets=true;" +
+          "TrustServerCertificate=true;"
+        : string.Empty;
     // ----------------------------------------------------
 
     public async Task InitializeAsync()
@@ -63,18 +65,18 @@ public class SharedFixture : IAsyncLifetime
         {
             try
             {
-                _dbContainer = new PostgreSqlBuilder()
+                // Use explicit image constructors to avoid obsolete parameterless constructors
+                _dbContainer = new PostgreSqlBuilder("postgres:15-alpine")
                     .WithDatabase("carvedrock")
                     .WithUsername("carvedrock")
                     .WithPassword("innerloop-ftw!")
                     .Build();
 
-                _sqlContainer = new MsSqlBuilder()
+                _sqlContainer = new MsSqlBuilder("mcr.microsoft.com/mssql/server:2022-latest")
                     .WithPassword("1nnerLoop-ftw!")
                     .Build();
 
-                _customSqlContainer = new ContainerBuilder()
-                    .WithImage("localhost/carvedrock/sqlserver")
+                _customSqlContainer = new ContainerBuilder("localhost/carvedrock/sqlserver")
                     .WithEnvironment("SA_PASSWORD", "Custom1zationRocks!")
                     .WithPortBinding(1433, assignRandomHostPort: true)
                     .WithWaitStrategy(Wait.ForUnixContainer().UntilMessageIsLogged("Starting up database 'CarvedRock'."))
