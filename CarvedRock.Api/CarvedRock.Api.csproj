@@ -11,6 +11,11 @@
     <GenerateOpenApiDocuments>false</GenerateOpenApiDocuments>
   </PropertyGroup>
 
+  <!-- Provide a no-op GenerateOpenApiDocuments target for net8 to satisfy build calls when the net8 TFM doesn't import Swashbuckle targets -->
+  <Target Name="GenerateOpenApiDocuments" Condition="'$(TargetFramework)' == 'net8.0'">
+    <!-- intentionally empty: avoids MSB4057 when the target is invoked but not defined for this TFM -->
+  </Target>
+
   <!-- Explicitly exclude problematic ApiDescription.Server package for net8.0 to avoid invoking its targets at build time -->
   <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
     <PackageReference Include="Microsoft.Extensions.ApiDescription.Server" Version="6.0.5" ExcludeAssets="all" />
@@ -19,15 +24,10 @@
   <ItemGroup>
     <PackageReference Include="IdentityModel" Version="6.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
     <PackageReference Include="OpenTelemetry.Instrumentation.EntityFrameworkCore" Version="1.0.0-beta.7" />    
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />    
 
     <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="8.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
+    <!-- EF.Design moved into per-TFM ItemGroups to avoid downgrades during multi-target restore -->
 
     <!-- Serilog / Seq -->
     <PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />    
@@ -35,7 +35,7 @@
     <PackageReference Include="Serilog.Exceptions" Version="8.4.0" />
     <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.0" />
     <PackageReference Include="Serilog.Enrichers.Span" Version="3.1.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+    <!-- Keep Swashbuckle annotations out of net8 to avoid invoking openapi generation targets during multi-target builds -->
 
   </ItemGroup>
 
@@ -44,6 +44,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.12" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="10.0.2" />
     <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="10.0.12" />
+    <!-- Keep EF.Design explicitly in the net10.0 TFM group to avoid downgrade warnings in multi-target restore -->
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.12">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -51,6 +52,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.12" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.12" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>

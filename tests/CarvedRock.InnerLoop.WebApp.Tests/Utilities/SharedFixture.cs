@@ -22,6 +22,7 @@ public class SharedFixture : IAsyncLifetime
 {
     public readonly Faker Faker = new();
     public List<ProductModel> OriginalProducts { get; private set; } = null!;
+    public List<EmailModel> SentEmails { get; } = new();
     
     private static readonly List<string> _categories = ["boots", "equip", "kayak"];
 
