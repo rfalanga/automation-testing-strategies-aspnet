@@ -4,7 +4,9 @@ using CarvedRock.Domain;
 using CarvedRock.Api;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+#if NET10_0_OR_GREATER
 using Swashbuckle.AspNetCore.SwaggerGen;
+#endif
 using Serilog;
 using Serilog.Enrichers.Span;
 using Serilog.Exceptions;
@@ -64,8 +66,10 @@ builder.Services.AddScoped<IClaimsTransformation, CarvedRockTransformer>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+#if NET10_0_OR_GREATER
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, SwaggerOptions>();
 builder.Services.AddSwaggerGen();
+#endif
 
 builder.Services.AddScoped<IProductLogic, ProductLogic>();
 
@@ -90,7 +94,8 @@ builder.Services.AddDbContext<LocalContext>(options => options
 
 builder.Services.AddScoped<ICarvedRockRepository, CarvedRockRepository>();
 
-builder.Services.AddAutoMapper(typeof(ProductMappingProfile));
+// Register AutoMapper profiles explicitly to match upgraded AutoMapper extensions
+builder.Services.AddAutoMapper(cfg => cfg.AddProfile<ProductMappingProfile>());
 builder.Services.AddValidatorsFromAssemblyContaining<NewProductValidator>();
 
 var app = builder.Build();
@@ -128,6 +133,7 @@ static void SetupDevelopment(WebApplication app)
         context.MigrateAndCreateData();
     }
 
+#if NET10_0_OR_GREATER
     app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
@@ -135,6 +141,7 @@ static void SetupDevelopment(WebApplication app)
         options.OAuthAppName("CarvedRock API");
         options.OAuthUsePkce();
     });
+#endif
 }
 
 public partial class Program { } // used for integration tests

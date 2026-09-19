@@ -1,0 +1,3378 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2026-09-19T13:53:44.2013402Z",
+  "analysisEndTime": "2026-09-19T13:53:46.321972Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 9,
+      "issues": 8,
+      "incidents": 109,
+      "effort": 109
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 22,
+        "Optional": 4,
+        "Potential": 83,
+        "Information": 0
+      },
+      "category": {
+        "Project": 9,
+        "NuGet": 17,
+        "Api": 83
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "CarvedRock.Api\\CarvedRock.Api.csproj",
+      "startingProject": true,
+      "issues": 5,
+      "storyPoints": 20,
+      "properties": {
+        "appName": "CarvedRock.Api",
+        "projectKind": "AspNetCore",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 5,
+        "numberOfCodeFiles": 4,
+        "linesTotal": 304,
+        "linesOfCode": 284,
+        "totalApiScanned": 458,
+        "minLinesOfCodeToChange": 15,
+        "maxLinesOfCodeToChange": 15
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "b4a6d313-509c-45fb-b6cf-31a86faedb19",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Authentication.JwtBearer, and replace with new package Microsoft.AspNetCore.Authentication.JwtBearer 10.0.12",
+              "protected": "Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Authentication.JwtBearer, and replace with new package Microsoft.AspNetCore.Authentication.JwtBearer 10.0.12"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\CarvedRock.Api.csproj",
+            "snippet": "Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Authentication.JwtBearer, and replace with new package Microsoft.AspNetCore.Authentication.JwtBearer 10.0.12",
+            "protectedSnippet": "Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Authentication.JwtBearer, and replace with new package Microsoft.AspNetCore.Authentication.JwtBearer 10.0.12",
+            "label": "Microsoft.AspNetCore.Authentication.JwtBearer 8.0.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+              "PackageVersion": "8.0.0",
+              "PackageNewVersion": "10.0.12",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "f64b4760-14ee-4ea6-b3f2-728dcc4fc41d",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Design, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.12",
+              "protected": "Microsoft.EntityFrameworkCore.Design, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.12"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\CarvedRock.Api.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Design, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.12",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Design, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.12",
+            "label": "Microsoft.EntityFrameworkCore.Design 8.0.0",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Design",
+              "PackageVersion": "8.0.0",
+              "PackageNewVersion": "10.0.12",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "e30358df-c34d-48d6-afb9-26934da7c05a",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore, and replace with new package Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore 10.0.12",
+              "protected": "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore, and replace with new package Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore 10.0.12"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\CarvedRock.Api.csproj",
+            "snippet": "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore, and replace with new package Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore 10.0.12",
+            "protectedSnippet": "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore, and replace with new package Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore 10.0.12",
+            "label": "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore 8.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore",
+              "PackageVersion": "8.0.0",
+              "PackageNewVersion": "10.0.12",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "9a2728d5-f239-4ba3-ba28-d3eb4abff533",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.VisualStudio.Web.CodeGeneration.Design, 8.0.1\n\nRecommendation:\n\nRemove Microsoft.VisualStudio.Web.CodeGeneration.Design, and replace with new package Microsoft.VisualStudio.Web.CodeGeneration.Design 10.0.2",
+              "protected": "Microsoft.VisualStudio.Web.CodeGeneration.Design, 8.0.1\n\nRecommendation:\n\nRemove Microsoft.VisualStudio.Web.CodeGeneration.Design, and replace with new package Microsoft.VisualStudio.Web.CodeGeneration.Design 10.0.2"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\CarvedRock.Api.csproj",
+            "snippet": "Microsoft.VisualStudio.Web.CodeGeneration.Design, 8.0.1\n\nRecommendation:\n\nRemove Microsoft.VisualStudio.Web.CodeGeneration.Design, and replace with new package Microsoft.VisualStudio.Web.CodeGeneration.Design 10.0.2",
+            "protectedSnippet": "Microsoft.VisualStudio.Web.CodeGeneration.Design, 8.0.1\n\nRecommendation:\n\nRemove Microsoft.VisualStudio.Web.CodeGeneration.Design, and replace with new package Microsoft.VisualStudio.Web.CodeGeneration.Design 10.0.2",
+            "label": "Microsoft.VisualStudio.Web.CodeGeneration.Design 8.0.1",
+            "properties": {
+              "PackageId": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
+              "PackageVersion": "8.0.1",
+              "PackageNewVersion": "10.0.2",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b5a48c1e-086b-4d59-bdc6-c252d21a52ff",
+          "ruleId": "Project.0002",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net8.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\CarvedRock.Api.csproj",
+            "snippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "350f0b2c-211d-4a5a-95c9-21386d2cef47",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.AddSecurityDefinition(\u0022oauth2\u0022, new OpenApiSecurityScheme\r\n            {\r\n                Type = SecuritySchemeType.OAuth2,\r\n                Flows = new OpenApiOAuthFlows\r\n                {\r\n                    AuthorizationCode = new OpenApiOAuthFlow\r\n                    {\r\n                        AuthorizationUrl = new Uri(disco.AuthorizeEndpoint!),\r\n                        TokenUrl = new Uri(disco.TokenEndpoint!),\r\n                        Scopes = oauthScopes\r\n                    }\r\n                }\r\n            });",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\SwaggerHelpers.cs",
+            "snippet": "options.AddSecurityDefinition(\u0022oauth2\u0022, new OpenApiSecurityScheme\r\n            {\r\n                Type = SecuritySchemeType.OAuth2,\r\n                Flows = new OpenApiOAuthFlows\r\n                {\r\n                    AuthorizationCode = new OpenApiOAuthFlow\r\n                    {\r\n                        AuthorizationUrl = new Uri(disco.AuthorizeEndpoint!),\r\n                        TokenUrl = new Uri(disco.TokenEndpoint!),\r\n                        Scopes = oauthScopes\r\n                    }\r\n                }\r\n            });",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "2259"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 25,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "45b5f053-2806-46a9-b3cf-b38444a6601d",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.AddSecurityDefinition(\u0022oauth2\u0022, new OpenApiSecurityScheme\r\n            {\r\n                Type = SecuritySchemeType.OAuth2,\r\n                Flows = new OpenApiOAuthFlows\r\n                {\r\n                    AuthorizationCode = new OpenApiOAuthFlow\r\n                    {\r\n                        AuthorizationUrl = new Uri(disco.AuthorizeEndpoint!),\r\n                        TokenUrl = new Uri(disco.TokenEndpoint!),\r\n                        Scopes = oauthScopes\r\n                    }\r\n                }\r\n            });",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\SwaggerHelpers.cs",
+            "snippet": "options.AddSecurityDefinition(\u0022oauth2\u0022, new OpenApiSecurityScheme\r\n            {\r\n                Type = SecuritySchemeType.OAuth2,\r\n                Flows = new OpenApiOAuthFlows\r\n                {\r\n                    AuthorizationCode = new OpenApiOAuthFlow\r\n                    {\r\n                        AuthorizationUrl = new Uri(disco.AuthorizeEndpoint!),\r\n                        TokenUrl = new Uri(disco.TokenEndpoint!),\r\n                        Scopes = oauthScopes\r\n                    }\r\n                }\r\n            });",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "properties": {
+              "CharCount": "2259"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 25,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "02ec3d92-e6f8-49b0-9950-b466416af5cc",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.AddSecurityDefinition(\u0022oauth2\u0022, new OpenApiSecurityScheme\r\n            {\r\n                Type = SecuritySchemeType.OAuth2,\r\n                Flows = new OpenApiOAuthFlows\r\n                {\r\n                    AuthorizationCode = new OpenApiOAuthFlow\r\n                    {\r\n                        AuthorizationUrl = new Uri(disco.AuthorizeEndpoint!),\r\n                        TokenUrl = new Uri(disco.TokenEndpoint!),\r\n                        Scopes = oauthScopes\r\n                    }\r\n                }\r\n            });",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\SwaggerHelpers.cs",
+            "snippet": "options.AddSecurityDefinition(\u0022oauth2\u0022, new OpenApiSecurityScheme\r\n            {\r\n                Type = SecuritySchemeType.OAuth2,\r\n                Flows = new OpenApiOAuthFlows\r\n                {\r\n                    AuthorizationCode = new OpenApiOAuthFlow\r\n                    {\r\n                        AuthorizationUrl = new Uri(disco.AuthorizeEndpoint!),\r\n                        TokenUrl = new Uri(disco.TokenEndpoint!),\r\n                        Scopes = oauthScopes\r\n                    }\r\n                }\r\n            });",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "2259"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 25,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "d2e8632e-e19b-4940-9f2f-0737e77da4f6",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.AddSecurityDefinition(\u0022oauth2\u0022, new OpenApiSecurityScheme\r\n            {\r\n                Type = SecuritySchemeType.OAuth2,\r\n                Flows = new OpenApiOAuthFlows\r\n                {\r\n                    AuthorizationCode = new OpenApiOAuthFlow\r\n                    {\r\n                        AuthorizationUrl = new Uri(disco.AuthorizeEndpoint!),\r\n                        TokenUrl = new Uri(disco.TokenEndpoint!),\r\n                        Scopes = oauthScopes\r\n                    }\r\n                }\r\n            });",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\SwaggerHelpers.cs",
+            "snippet": "options.AddSecurityDefinition(\u0022oauth2\u0022, new OpenApiSecurityScheme\r\n            {\r\n                Type = SecuritySchemeType.OAuth2,\r\n                Flows = new OpenApiOAuthFlows\r\n                {\r\n                    AuthorizationCode = new OpenApiOAuthFlow\r\n                    {\r\n                        AuthorizationUrl = new Uri(disco.AuthorizeEndpoint!),\r\n                        TokenUrl = new Uri(disco.TokenEndpoint!),\r\n                        Scopes = oauthScopes\r\n                    }\r\n                }\r\n            });",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "2259"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 25,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "b693858d-9c8a-4590-a8b8-5973c126d704",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.AddSecurityDefinition(\u0022oauth2\u0022, new OpenApiSecurityScheme\r\n            {\r\n                Type = SecuritySchemeType.OAuth2,\r\n                Flows = new OpenApiOAuthFlows\r\n                {\r\n                    AuthorizationCode = new OpenApiOAuthFlow\r\n                    {\r\n                        AuthorizationUrl = new Uri(disco.AuthorizeEndpoint!),\r\n                        TokenUrl = new Uri(disco.TokenEndpoint!),\r\n                        Scopes = oauthScopes\r\n                    }\r\n                }\r\n            });",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\SwaggerHelpers.cs",
+            "snippet": "options.AddSecurityDefinition(\u0022oauth2\u0022, new OpenApiSecurityScheme\r\n            {\r\n                Type = SecuritySchemeType.OAuth2,\r\n                Flows = new OpenApiOAuthFlows\r\n                {\r\n                    AuthorizationCode = new OpenApiOAuthFlow\r\n                    {\r\n                        AuthorizationUrl = new Uri(disco.AuthorizeEndpoint!),\r\n                        TokenUrl = new Uri(disco.TokenEndpoint!),\r\n                        Scopes = oauthScopes\r\n                    }\r\n                }\r\n            });",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "properties": {
+              "CharCount": "2259"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 25,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "a1faa1a8-ae7e-460f-8f9c-42710dd902dd",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.AddSecurityDefinition(\u0022oauth2\u0022, new OpenApiSecurityScheme\r\n            {\r\n                Type = SecuritySchemeType.OAuth2,\r\n                Flows = new OpenApiOAuthFlows\r\n                {\r\n                    AuthorizationCode = new OpenApiOAuthFlow\r\n                    {\r\n                        AuthorizationUrl = new Uri(disco.AuthorizeEndpoint!),\r\n                        TokenUrl = new Uri(disco.TokenEndpoint!),\r\n                        Scopes = oauthScopes\r\n                    }\r\n                }\r\n            });",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\SwaggerHelpers.cs",
+            "snippet": "options.AddSecurityDefinition(\u0022oauth2\u0022, new OpenApiSecurityScheme\r\n            {\r\n                Type = SecuritySchemeType.OAuth2,\r\n                Flows = new OpenApiOAuthFlows\r\n                {\r\n                    AuthorizationCode = new OpenApiOAuthFlow\r\n                    {\r\n                        AuthorizationUrl = new Uri(disco.AuthorizeEndpoint!),\r\n                        TokenUrl = new Uri(disco.TokenEndpoint!),\r\n                        Scopes = oauthScopes\r\n                    }\r\n                }\r\n            });",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "2259"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 25,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "77873e39-221e-4109-903c-867e2add8b02",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: Exception diagnostics are suppressed when IExceptionHandler.TryHandleAsync returns true ",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseExceptionHandler();",
+              "protected": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder)"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\Program.cs",
+            "snippet": "app.UseExceptionHandler();",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder)",
+            "label": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder)",
+            "properties": {
+              "CharCount": "4858"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/aspnet-core/10/exception-handler-diagnostics-suppressed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 104,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "3f0ef1f5-46fe-44b0-a567-baae0b65f115",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddAutoMapper(typeof(ProductMappingProfile));",
+              "protected": "T:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\Program.cs",
+            "snippet": "builder.Services.AddAutoMapper(typeof(ProductMappingProfile));",
+            "protectedSnippet": "T:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions",
+            "label": "T:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions",
+            "properties": {
+              "CharCount": "4858"
+            },
+            "line": 92,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "df3324ae-995f-423e-8ee0-26f665748249",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.TokenValidationParameters = new TokenValidationParameters\r\n        {\r\n            NameClaimType = \u0022email\u0022\r\n        };",
+              "protected": "P:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions.TokenValidationParameters"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\Program.cs",
+            "snippet": "options.TokenValidationParameters = new TokenValidationParameters\r\n        {\r\n            NameClaimType = \u0022email\u0022\r\n        };",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions.TokenValidationParameters",
+            "label": "P:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions.TokenValidationParameters",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "4858"
+            },
+            "line": 57,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "9a75e441-93c8-47b4-b754-65658d22b7a3",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.Audience = \u0022api\u0022;",
+              "protected": "P:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions.Audience"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\Program.cs",
+            "snippet": "options.Audience = \u0022api\u0022;",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions.Audience",
+            "label": "P:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions.Audience",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "4858"
+            },
+            "line": 56,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "d1ecb137-7126-42a2-bedc-92a05ba3f045",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.Authority = \u0022https://demo.duendesoftware.com\u0022;",
+              "protected": "P:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions.Authority"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\Program.cs",
+            "snippet": "options.Authority = \u0022https://demo.duendesoftware.com\u0022;",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions.Authority",
+            "label": "P:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions.Authority",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "4858"
+            },
+            "line": 55,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "93b14dab-66a8-4130-ac08-8e8ba109dca8",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddAuthentication(\u0022Bearer\u0022)\r\n    .AddJwtBearer(\u0022Bearer\u0022, options =\u003E\r\n    {\r\n        options.Authority = \u0022https://demo.duendesoftware.com\u0022;\r\n        options.Audience = \u0022api\u0022;\r\n        options.TokenValidationParameters = new TokenValidationParameters\r\n        {\r\n            NameClaimType = \u0022email\u0022\r\n        };\r\n    });",
+              "protected": "T:Microsoft.Extensions.DependencyInjection.JwtBearerExtensions"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\Program.cs",
+            "snippet": "builder.Services.AddAuthentication(\u0022Bearer\u0022)\r\n    .AddJwtBearer(\u0022Bearer\u0022, options =\u003E\r\n    {\r\n        options.Authority = \u0022https://demo.duendesoftware.com\u0022;\r\n        options.Audience = \u0022api\u0022;\r\n        options.TokenValidationParameters = new TokenValidationParameters\r\n        {\r\n            NameClaimType = \u0022email\u0022\r\n        };\r\n    });",
+            "protectedSnippet": "T:Microsoft.Extensions.DependencyInjection.JwtBearerExtensions",
+            "label": "T:Microsoft.Extensions.DependencyInjection.JwtBearerExtensions",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "4858"
+            },
+            "line": 52,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "cea41dd9-ae6e-4f37-8fab-0a54f49f06db",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddAuthentication(\u0022Bearer\u0022)\r\n    .AddJwtBearer(\u0022Bearer\u0022, options =\u003E\r\n    {\r\n        options.Authority = \u0022https://demo.duendesoftware.com\u0022;\r\n        options.Audience = \u0022api\u0022;\r\n        options.TokenValidationParameters = new TokenValidationParameters\r\n        {\r\n            NameClaimType = \u0022email\u0022\r\n        };\r\n    });",
+              "protected": "M:Microsoft.Extensions.DependencyInjection.JwtBearerExtensions.AddJwtBearer(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.Action{Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions})"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\Program.cs",
+            "snippet": "builder.Services.AddAuthentication(\u0022Bearer\u0022)\r\n    .AddJwtBearer(\u0022Bearer\u0022, options =\u003E\r\n    {\r\n        options.Authority = \u0022https://demo.duendesoftware.com\u0022;\r\n        options.Audience = \u0022api\u0022;\r\n        options.TokenValidationParameters = new TokenValidationParameters\r\n        {\r\n            NameClaimType = \u0022email\u0022\r\n        };\r\n    });",
+            "protectedSnippet": "M:Microsoft.Extensions.DependencyInjection.JwtBearerExtensions.AddJwtBearer(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.Action{Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions})",
+            "label": "M:Microsoft.Extensions.DependencyInjection.JwtBearerExtensions.AddJwtBearer(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.Action{Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions})",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "4858"
+            },
+            "line": 52,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "cad279b0-92de-48cb-808f-22da46391bc6",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "JwtSecurityTokenHandler.DefaultMapInboundClaims = false;",
+              "protected": "T:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\Program.cs",
+            "snippet": "JwtSecurityTokenHandler.DefaultMapInboundClaims = false;",
+            "protectedSnippet": "T:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler",
+            "label": "T:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler",
+            "properties": {
+              "CharCount": "4858"
+            },
+            "line": 51,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "338b7cfe-1c84-4f43-b0aa-828d74bfc0de",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "CarvedRock.Api\\CarvedRock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "JwtSecurityTokenHandler.DefaultMapInboundClaims = false;",
+              "protected": "F:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.DefaultMapInboundClaims"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Api\\Program.cs",
+            "snippet": "JwtSecurityTokenHandler.DefaultMapInboundClaims = false;",
+            "protectedSnippet": "F:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.DefaultMapInboundClaims",
+            "label": "F:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.DefaultMapInboundClaims",
+            "properties": {
+              "CharCount": "4858"
+            },
+            "line": 51,
+            "column": 0
+          }
+        }
+      ],
+      "features": [
+        {
+          "featureId": "IdentityModel",
+          "incidents": [
+            "338b7cfe-1c84-4f43-b0aa-828d74bfc0de",
+            "cad279b0-92de-48cb-808f-22da46391bc6"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "CarvedRock.Core\\CarvedRock.Core.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "CarvedRock.Core",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 3,
+        "numberOfCodeFiles": 3,
+        "linesTotal": 43,
+        "linesOfCode": 43,
+        "totalApiScanned": 74,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "322dc140-747d-4ceb-af3d-38a9c9d04587",
+          "ruleId": "Project.0002",
+          "projectPath": "CarvedRock.Core\\CarvedRock.Core.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net8.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Core\\CarvedRock.Core.csproj",
+            "snippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "CarvedRock.Data\\CarvedRock.Data.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 5,
+      "properties": {
+        "appName": "CarvedRock.Data",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 7,
+        "numberOfCodeFiles": 7,
+        "linesTotal": 292,
+        "linesOfCode": 292,
+        "totalApiScanned": 308,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "508bcea0-edd6-4677-a49a-16248c2d6a50",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CarvedRock.Data\\CarvedRock.Data.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Design, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.12",
+              "protected": "Microsoft.EntityFrameworkCore.Design, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.12"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Data\\CarvedRock.Data.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Design, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.12",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Design, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.12",
+            "label": "Microsoft.EntityFrameworkCore.Design 8.0.0",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Design",
+              "PackageVersion": "8.0.0",
+              "PackageNewVersion": "10.0.12",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "c32450f2-bd70-49f1-a025-d9f687d3da69",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CarvedRock.Data\\CarvedRock.Data.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Sqlite, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Sqlite, and replace with new package Microsoft.EntityFrameworkCore.Sqlite 10.0.12",
+              "protected": "Microsoft.EntityFrameworkCore.Sqlite, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Sqlite, and replace with new package Microsoft.EntityFrameworkCore.Sqlite 10.0.12"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Data\\CarvedRock.Data.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Sqlite, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Sqlite, and replace with new package Microsoft.EntityFrameworkCore.Sqlite 10.0.12",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Sqlite, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Sqlite, and replace with new package Microsoft.EntityFrameworkCore.Sqlite 10.0.12",
+            "label": "Microsoft.EntityFrameworkCore.Sqlite 8.0.0",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Sqlite",
+              "PackageVersion": "8.0.0",
+              "PackageNewVersion": "10.0.12",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "28738b6d-86a1-4eab-9877-570b30bf638a",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CarvedRock.Data\\CarvedRock.Data.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.SqlServer, 8.0.2\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.12",
+              "protected": "Microsoft.EntityFrameworkCore.SqlServer, 8.0.2\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.12"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Data\\CarvedRock.Data.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.SqlServer, 8.0.2\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.12",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.SqlServer, 8.0.2\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.12",
+            "label": "Microsoft.EntityFrameworkCore.SqlServer 8.0.2",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.SqlServer",
+              "PackageVersion": "8.0.2",
+              "PackageNewVersion": "10.0.12",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "e6dc993b-3705-481e-98a9-24e2571eb6f3",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CarvedRock.Data\\CarvedRock.Data.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Logging.Abstractions, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.Extensions.Logging.Abstractions, and replace with new package Microsoft.Extensions.Logging.Abstractions 10.0.12",
+              "protected": "Microsoft.Extensions.Logging.Abstractions, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.Extensions.Logging.Abstractions, and replace with new package Microsoft.Extensions.Logging.Abstractions 10.0.12"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Data\\CarvedRock.Data.csproj",
+            "snippet": "Microsoft.Extensions.Logging.Abstractions, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.Extensions.Logging.Abstractions, and replace with new package Microsoft.Extensions.Logging.Abstractions 10.0.12",
+            "protectedSnippet": "Microsoft.Extensions.Logging.Abstractions, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.Extensions.Logging.Abstractions, and replace with new package Microsoft.Extensions.Logging.Abstractions 10.0.12",
+            "label": "Microsoft.Extensions.Logging.Abstractions 8.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Logging.Abstractions",
+              "PackageVersion": "8.0.0",
+              "PackageNewVersion": "10.0.12",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "9e1fde9b-7248-4496-b471-e4f71e4e7d51",
+          "ruleId": "Project.0002",
+          "projectPath": "CarvedRock.Data\\CarvedRock.Data.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net8.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Data\\CarvedRock.Data.csproj",
+            "snippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "CarvedRock.Domain\\CarvedRock.Domain.csproj",
+      "startingProject": true,
+      "issues": 4,
+      "storyPoints": 5,
+      "properties": {
+        "appName": "CarvedRock.Domain",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 4,
+        "numberOfCodeFiles": 4,
+        "linesTotal": 113,
+        "linesOfCode": 113,
+        "totalApiScanned": 267,
+        "minLinesOfCodeToChange": 2,
+        "maxLinesOfCodeToChange": 2
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "090fd473-4aed-4afe-a4e0-41dc693ee7a9",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CarvedRock.Domain\\CarvedRock.Domain.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Logging.Abstractions, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.Extensions.Logging.Abstractions, and replace with new package Microsoft.Extensions.Logging.Abstractions 10.0.12",
+              "protected": "Microsoft.Extensions.Logging.Abstractions, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.Extensions.Logging.Abstractions, and replace with new package Microsoft.Extensions.Logging.Abstractions 10.0.12"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Domain\\CarvedRock.Domain.csproj",
+            "snippet": "Microsoft.Extensions.Logging.Abstractions, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.Extensions.Logging.Abstractions, and replace with new package Microsoft.Extensions.Logging.Abstractions 10.0.12",
+            "protectedSnippet": "Microsoft.Extensions.Logging.Abstractions, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.Extensions.Logging.Abstractions, and replace with new package Microsoft.Extensions.Logging.Abstractions 10.0.12",
+            "label": "Microsoft.Extensions.Logging.Abstractions 8.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Logging.Abstractions",
+              "PackageVersion": "8.0.0",
+              "PackageNewVersion": "10.0.12",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "fbd60069-0861-487c-88ad-e75bf8994389",
+          "ruleId": "NuGet.0004",
+          "projectPath": "CarvedRock.Domain\\CarvedRock.Domain.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "AutoMapper, 13.0.1\n\nRecommendation:\n\nAutoMapper, 16.2.0",
+              "protected": "AutoMapper, 13.0.1\n\nRecommendation:\n\nAutoMapper, 16.2.0"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Domain\\CarvedRock.Domain.csproj",
+            "snippet": "AutoMapper, 13.0.1\n\nRecommendation:\n\nAutoMapper, 16.2.0",
+            "protectedSnippet": "AutoMapper, 13.0.1\n\nRecommendation:\n\nAutoMapper, 16.2.0",
+            "label": "AutoMapper 13.0.1",
+            "properties": {
+              "PackageId": "AutoMapper",
+              "PackageVersion": "13.0.1",
+              "PackageNewVersion": "16.2.0",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "33c486ff-5b48-4464-922f-3a30361ce0ab",
+          "ruleId": "Project.0002",
+          "projectPath": "CarvedRock.Domain\\CarvedRock.Domain.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net8.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Domain\\CarvedRock.Domain.csproj",
+            "snippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "cbe5b995-3604-48bb-9f47-02ea6cf093a1",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CarvedRock.Domain\\CarvedRock.Domain.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "RuleFor(p =\u003E p.ImgUrl)\r\n            .Must(url =\u003E Uri.IsWellFormedUriString(url, UriKind.Absolute)).WithMessage(\u0022{PropertyName} must be a valid URL.\u0022)\r\n            .MaximumLength(255).WithMessage(\u0022{PropertyName} must not exceed 255 characters.\u0022);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Domain\\ProductValidator.cs",
+            "snippet": "RuleFor(p =\u003E p.ImgUrl)\r\n            .Must(url =\u003E Uri.IsWellFormedUriString(url, UriKind.Absolute)).WithMessage(\u0022{PropertyName} must be a valid URL.\u0022)\r\n            .MaximumLength(255).WithMessage(\u0022{PropertyName} must not exceed 255 characters.\u0022);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "2361"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 40,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "8f18d7ad-ac3e-4df5-b7bd-73b0cd23a1c1",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CarvedRock.Domain\\CarvedRock.Domain.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "RuleFor(p =\u003E p.ImgUrl)\r\n            .Must(url =\u003E Uri.IsWellFormedUriString(url, UriKind.Absolute)).WithMessage(\u0022{PropertyName} must be a valid URL.\u0022)\r\n            .MaximumLength(255).WithMessage(\u0022{PropertyName} must not exceed 255 characters.\u0022);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "CarvedRock.Domain\\ProductValidator.cs",
+            "snippet": "RuleFor(p =\u003E p.ImgUrl)\r\n            .Must(url =\u003E Uri.IsWellFormedUriString(url, UriKind.Absolute)).WithMessage(\u0022{PropertyName} must be a valid URL.\u0022)\r\n            .MaximumLength(255).WithMessage(\u0022{PropertyName} must not exceed 255 characters.\u0022);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "2361"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 40,
+            "column": 8
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+      "startingProject": true,
+      "issues": 4,
+      "storyPoints": 15,
+      "properties": {
+        "appName": "CarvedRock.InnerLoop.Tests",
+        "projectKind": "AspNetCore",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": true,
+        "numberOfFiles": 10,
+        "numberOfCodeFiles": 8,
+        "linesTotal": 2514,
+        "linesOfCode": 745,
+        "totalApiScanned": 1112,
+        "minLinesOfCodeToChange": 12,
+        "maxLinesOfCodeToChange": 12
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "07da0f02-7562-4b04-ac38-0fd3f7f64b35",
+          "ruleId": "NuGet.0002",
+          "projectPath": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Mvc.Testing, 8.0.2\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Mvc.Testing, and replace with new package Microsoft.AspNetCore.Mvc.Testing 10.0.12",
+              "protected": "Microsoft.AspNetCore.Mvc.Testing, 8.0.2\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Mvc.Testing, and replace with new package Microsoft.AspNetCore.Mvc.Testing 10.0.12"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+            "snippet": "Microsoft.AspNetCore.Mvc.Testing, 8.0.2\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Mvc.Testing, and replace with new package Microsoft.AspNetCore.Mvc.Testing 10.0.12",
+            "protectedSnippet": "Microsoft.AspNetCore.Mvc.Testing, 8.0.2\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Mvc.Testing, and replace with new package Microsoft.AspNetCore.Mvc.Testing 10.0.12",
+            "label": "Microsoft.AspNetCore.Mvc.Testing 8.0.2",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Mvc.Testing",
+              "PackageVersion": "8.0.2",
+              "PackageNewVersion": "10.0.12",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "84bcdcd7-8e0a-459e-a262-6ed034fc3ae4",
+          "ruleId": "NuGet.0005",
+          "projectPath": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "xunit, 2.7.0\n\nRecommendation:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+              "protected": "xunit, 2.7.0\n\nRecommendation:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+            "snippet": "xunit, 2.7.0\n\nRecommendation:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+            "protectedSnippet": "xunit, 2.7.0\n\nRecommendation:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+            "label": "xunit 2.7.0",
+            "properties": {
+              "PackageId": "xunit",
+              "PackageVersion": "2.7.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "5606b186-7bac-4051-ad20-f391e266e02d",
+          "ruleId": "Project.0002",
+          "projectPath": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net8.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+            "snippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "b6a5462c-ea34-46ed-9ba9-241489040b03",
+          "ruleId": "Api.0003",
+          "description": "Nullable JsonDocument properties deserialize to JsonValueKind.Null ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var jsonContent = JsonDocument.Parse(stringContent);",
+              "protected": "T:System.Text.Json.JsonDocument"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.Tests\\Utilities\\HttpClientExtensions.cs",
+            "snippet": "var jsonContent = JsonDocument.Parse(stringContent);",
+            "protectedSnippet": "T:System.Text.Json.JsonDocument",
+            "label": "T:System.Text.Json.JsonDocument",
+            "properties": {
+              "CharCount": "2255"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/serialization/9.0/jsondocument-props.md",
+                "isCustom": false
+              }
+            ],
+            "line": 53,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "afb8e71e-f9ff-4674-9292-f7dab72d97d0",
+          "ruleId": "Api.0003",
+          "description": "Nullable JsonDocument properties deserialize to JsonValueKind.Null ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var jsonContent = JsonDocument.Parse(stringContent);",
+              "protected": "T:System.Text.Json.JsonDocument"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.Tests\\Utilities\\HttpClientExtensions.cs",
+            "snippet": "var jsonContent = JsonDocument.Parse(stringContent);",
+            "protectedSnippet": "T:System.Text.Json.JsonDocument",
+            "label": "T:System.Text.Json.JsonDocument",
+            "properties": {
+              "CharCount": "2255"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/serialization/9.0/jsondocument-props.md",
+                "isCustom": false
+              }
+            ],
+            "line": 53,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "62945f1f-f285-46c3-bf69-0e02c88471c6",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var stringContent = await response.Content.ReadAsStringAsync();",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.Tests\\Utilities\\HttpClientExtensions.cs",
+            "snippet": "var stringContent = await response.Content.ReadAsStringAsync();",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "2255"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 31,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "c88c5410-3d64-4079-8d46-6673580b79c3",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Client.BaseAddress = new Uri(wireMockProxyUrl);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.Tests\\Utilities\\BaseTest.cs",
+            "snippet": "Client.BaseAddress = new Uri(wireMockProxyUrl);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "512"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 15,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "a7da5dbd-6dea-4003-8aa4-ba47cbe1f112",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Client.BaseAddress = new Uri(wireMockProxyUrl);",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.Tests\\Utilities\\BaseTest.cs",
+            "snippet": "Client.BaseAddress = new Uri(wireMockProxyUrl);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "properties": {
+              "CharCount": "512"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 15,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "2b8edecf-4b00-443f-beb5-c8b2f54d69b4",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Client.BaseAddress = new Uri(wireMockProxyUrl);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.Tests\\Utilities\\BaseTest.cs",
+            "snippet": "Client.BaseAddress = new Uri(wireMockProxyUrl);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "512"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 15,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "b20af2a3-c72d-4c8a-876f-c980a81e031b",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var wireMockProxyUrl = SharedContext.ProxyAndRecordApiCalls(Client.BaseAddress!);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.Tests\\Utilities\\BaseTest.cs",
+            "snippet": "var wireMockProxyUrl = SharedContext.ProxyAndRecordApiCalls(Client.BaseAddress!);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "512"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 14,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "43ebbd59-8ce9-4836-a809-17e45d926f53",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Client.BaseAddress = new Uri(wireMockProxyUrl);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.Tests\\Utilities\\BaseTest.cs",
+            "snippet": "Client.BaseAddress = new Uri(wireMockProxyUrl);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "512"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 15,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "2e9e6681-40b4-452f-823d-e25444f5083b",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Client.BaseAddress = new Uri(wireMockProxyUrl);",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.Tests\\Utilities\\BaseTest.cs",
+            "snippet": "Client.BaseAddress = new Uri(wireMockProxyUrl);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "properties": {
+              "CharCount": "512"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 15,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "1cdff9a6-a829-46ff-950f-349f61fb57ef",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Client.BaseAddress = new Uri(wireMockProxyUrl);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.Tests\\Utilities\\BaseTest.cs",
+            "snippet": "Client.BaseAddress = new Uri(wireMockProxyUrl);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "512"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 15,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "aa8785b8-7885-48cd-9c15-6abbb58ba181",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var wireMockProxyUrl = SharedContext.ProxyAndRecordApiCalls(Client.BaseAddress!);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.Tests\\Utilities\\BaseTest.cs",
+            "snippet": "var wireMockProxyUrl = SharedContext.ProxyAndRecordApiCalls(Client.BaseAddress!);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "512"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 14,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "6f20e6d1-b569-4c25-96c8-254a8926f7a0",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.Tests\\CarvedRock.InnerLoop.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public string ProxyAndRecordApiCalls(Uri apiBaseUrl)",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.Tests\\Utilities\\SharedFixture.cs",
+            "snippet": "public string ProxyAndRecordApiCalls(Uri apiBaseUrl)",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "5781"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 112,
+            "column": 4
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+      "startingProject": true,
+      "issues": 6,
+      "storyPoints": 19,
+      "properties": {
+        "appName": "CarvedRock.InnerLoop.WebApp.Tests",
+        "projectKind": "AspNetCore",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": true,
+        "numberOfFiles": 15,
+        "numberOfCodeFiles": 13,
+        "linesTotal": 2549,
+        "linesOfCode": 780,
+        "totalApiScanned": 1211,
+        "minLinesOfCodeToChange": 15,
+        "maxLinesOfCodeToChange": 15
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "5f5355fa-ef47-49ab-b79f-2bb460ddbd76",
+          "ruleId": "NuGet.0002",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Mvc.Testing, 8.0.3\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Mvc.Testing, and replace with new package Microsoft.AspNetCore.Mvc.Testing 10.0.12",
+              "protected": "Microsoft.AspNetCore.Mvc.Testing, 8.0.3\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Mvc.Testing, and replace with new package Microsoft.AspNetCore.Mvc.Testing 10.0.12"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+            "snippet": "Microsoft.AspNetCore.Mvc.Testing, 8.0.3\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Mvc.Testing, and replace with new package Microsoft.AspNetCore.Mvc.Testing 10.0.12",
+            "protectedSnippet": "Microsoft.AspNetCore.Mvc.Testing, 8.0.3\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Mvc.Testing, and replace with new package Microsoft.AspNetCore.Mvc.Testing 10.0.12",
+            "label": "Microsoft.AspNetCore.Mvc.Testing 8.0.3",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Mvc.Testing",
+              "PackageVersion": "8.0.3",
+              "PackageNewVersion": "10.0.12",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "990ee2b5-1a3a-4d5a-bf76-55c670d13cd6",
+          "ruleId": "NuGet.0004",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "AngleSharp, 1.1.2\n\nRecommendation:\n\nAngleSharp, 1.8.2",
+              "protected": "AngleSharp, 1.1.2\n\nRecommendation:\n\nAngleSharp, 1.8.2"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+            "snippet": "AngleSharp, 1.1.2\n\nRecommendation:\n\nAngleSharp, 1.8.2",
+            "protectedSnippet": "AngleSharp, 1.1.2\n\nRecommendation:\n\nAngleSharp, 1.8.2",
+            "label": "AngleSharp 1.1.2",
+            "properties": {
+              "PackageId": "AngleSharp",
+              "PackageVersion": "1.1.2",
+              "PackageNewVersion": "1.8.2",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "4e8b00d6-f24b-4144-995f-15c2ac73bbb6",
+          "ruleId": "NuGet.0005",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "xunit, 2.7.0\n\nRecommendation:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+              "protected": "xunit, 2.7.0\n\nRecommendation:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+            "snippet": "xunit, 2.7.0\n\nRecommendation:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+            "protectedSnippet": "xunit, 2.7.0\n\nRecommendation:\n\nThis package will only be updated for security issues. All future feature work has moved onto v3.\n\nGuide for migrating from xUnit.net v2 to v3: https://xunit.net/docs/getting-started/v3/migration\nRemove xunit, and replace with new package xunit, 2.9.3",
+            "label": "xunit 2.7.0",
+            "properties": {
+              "PackageId": "xunit",
+              "PackageVersion": "2.7.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "db6c27ac-5a1a-4286-bc47-bfe4dce98fe0",
+          "ruleId": "Project.0002",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net8.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+            "snippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "33a6201a-dd23-4640-9dc3-ba1da189b9e8",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "submission.Content.Headers.TryAddWithoutValidation(header.Key, header.Value);",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\Utilities\\HttpClientExtensions.cs",
+            "snippet": "submission.Content.Headers.TryAddWithoutValidation(header.Key, header.Value);",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "2004"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 52,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "862455f8-b76f-42fa-b531-4abe3a92f284",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var submission = new HttpRequestMessage(new HttpMethod(submit.Method.ToString()), target)\r\n        {\r\n            Content = new StreamContent(submit.Body)\r\n        };",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\Utilities\\HttpClientExtensions.cs",
+            "snippet": "var submission = new HttpRequestMessage(new HttpMethod(submit.Method.ToString()), target)\r\n        {\r\n            Content = new StreamContent(submit.Body)\r\n        };",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "2004"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 44,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "6b2e796b-aefa-4e6c-861b-61f7710af55e",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "target = new Uri(formaction!, UriKind.Relative);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\Utilities\\HttpClientExtensions.cs",
+            "snippet": "target = new Uri(formaction!, UriKind.Relative);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "2004"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 42,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "7a709e5a-2015-4b76-b7be-e3bd191199b1",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "target = new Uri(formaction!, UriKind.Relative);",
+              "protected": "M:System.Uri.#ctor(System.String,System.UriKind)"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\Utilities\\HttpClientExtensions.cs",
+            "snippet": "target = new Uri(formaction!, UriKind.Relative);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "label": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "properties": {
+              "CharCount": "2004"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 42,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "b6c5927e-1ffd-4989-8472-dc0c40c0474f",
+          "ruleId": "Api.0002",
+          "description": "Breaking change: New TimeSpan.From*() overloads that take integers ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "server\r\n            .Given(Request.Create().WithPath(\u0022/Product\u0022).WithParam(\u0022category\u0022, \u0022error\u0022).UsingGet())\r\n            .RespondWith(Response.Create()\r\n            .WithDelay(TimeSpan.FromMilliseconds(Faker.Random.Int(0, 4000))) // delay anywhere from 0 to 4 seconds\r\n            .WithBodyAsJson(GetProblemDetail)\r\n            .WithStatusCode(500));",
+              "protected": "M:System.TimeSpan.FromMilliseconds(System.Double)"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\Utilities\\SharedFixture.cs",
+            "snippet": "server\r\n            .Given(Request.Create().WithPath(\u0022/Product\u0022).WithParam(\u0022category\u0022, \u0022error\u0022).UsingGet())\r\n            .RespondWith(Response.Create()\r\n            .WithDelay(TimeSpan.FromMilliseconds(Faker.Random.Int(0, 4000))) // delay anywhere from 0 to 4 seconds\r\n            .WithBodyAsJson(GetProblemDetail)\r\n            .WithStatusCode(500));",
+            "protectedSnippet": "M:System.TimeSpan.FromMilliseconds(System.Double)",
+            "label": "M:System.TimeSpan.FromMilliseconds(System.Double)",
+            "properties": {
+              "CharCount": "3936"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/core-libraries/9.0/timespan-from-overloads.md",
+                "isCustom": false
+              }
+            ],
+            "line": 73,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "cf7995a4-82fe-443f-a9b4-623f6fefc942",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "MapHeaders(response.Content.Headers);",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\Utilities\\HtmlHelpers.cs",
+            "snippet": "MapHeaders(response.Content.Headers);",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "1224"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "a89f174b-6615-4a60-b9d8-09f271a3a0be",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "htmlResponse\r\n                .Address(response.RequestMessage!.RequestUri)\r\n                .Status(response.StatusCode);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\Utilities\\HtmlHelpers.cs",
+            "snippet": "htmlResponse\r\n                .Address(response.RequestMessage!.RequestUri)\r\n                .Status(response.StatusCode);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "1224"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 18,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "baa41422-aa8c-42d5-af49-135c1695696a",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var content = await response.Content.ReadAsStringAsync();",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\Utilities\\HtmlHelpers.cs",
+            "snippet": "var content = await response.Content.ReadAsStringAsync();",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "1224"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 11,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "4add37ae-bb41-4ca9-aba7-fcfcea43629e",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "using (var emailClient = new HttpClient\r\n        { BaseAddress = new Uri(factory.SharedFixture.EmailServerUrl) })\r\n        {\r\n            var emailList = await emailClient.GetFromJsonAsync\u003CIEnumerable\u003CEmailModel\u003E\u003E(\u0022/api/messages\u0022);\r\n            var email = emailList!.FirstOrDefault(e =\u003E e.To == \u0022erik@test.com\u0022);\r\n            Assert.NotNull(email);\r\n            Assert.Contains(\u0022Your CarvedRock Order\u0022, email!.Subject);\r\n            Assert.Equal(\u0022e-commerce@carvedrock.com\u0022, email.From);\r\n\r\n            var emailHtmlResponse = await emailClient.GetStringAsync($\u0022/api/messages/{email.Id}/html\u0022);\r\n            var config = Configuration.Default;\r\n            using var context = BrowsingContext.New(config);\r\n            using var doc = await context.OpenAsync(req =\u003E req.Content(emailHtmlResponse));\r\n            outputHelper.WriteLine(doc.Body!.InnerHtml);\r\n\r\n            var message = doc.QuerySelector(\u0022h1\u0022)!.TextContent;\r\n            Assert.Contains(\u0022Thank you for your order!\u0022, message);\r\n        }",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CheckoutPageTests.cs",
+            "snippet": "using (var emailClient = new HttpClient\r\n        { BaseAddress = new Uri(factory.SharedFixture.EmailServerUrl) })\r\n        {\r\n            var emailList = await emailClient.GetFromJsonAsync\u003CIEnumerable\u003CEmailModel\u003E\u003E(\u0022/api/messages\u0022);\r\n            var email = emailList!.FirstOrDefault(e =\u003E e.To == \u0022erik@test.com\u0022);\r\n            Assert.NotNull(email);\r\n            Assert.Contains(\u0022Your CarvedRock Order\u0022, email!.Subject);\r\n            Assert.Equal(\u0022e-commerce@carvedrock.com\u0022, email.From);\r\n\r\n            var emailHtmlResponse = await emailClient.GetStringAsync($\u0022/api/messages/{email.Id}/html\u0022);\r\n            var config = Configuration.Default;\r\n            using var context = BrowsingContext.New(config);\r\n            using var doc = await context.OpenAsync(req =\u003E req.Content(emailHtmlResponse));\r\n            outputHelper.WriteLine(doc.Body!.InnerHtml);\r\n\r\n            var message = doc.QuerySelector(\u0022h1\u0022)!.TextContent;\r\n            Assert.Contains(\u0022Thank you for your order!\u0022, message);\r\n        }",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "6158"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 101,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "0cd8012b-64c6-4237-ab27-930b75883f7a",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "using (var emailClient = new HttpClient\r\n        { BaseAddress = new Uri(factory.SharedFixture.EmailServerUrl) })\r\n        {\r\n            var emailList = await emailClient.GetFromJsonAsync\u003CIEnumerable\u003CEmailModel\u003E\u003E(\u0022/api/messages\u0022);\r\n            var email = emailList!.FirstOrDefault(e =\u003E e.To == \u0022erik@test.com\u0022);\r\n            Assert.NotNull(email);\r\n            Assert.Contains(\u0022Your CarvedRock Order\u0022, email!.Subject);\r\n            Assert.Equal(\u0022e-commerce@carvedrock.com\u0022, email.From);\r\n\r\n            var emailHtmlResponse = await emailClient.GetStringAsync($\u0022/api/messages/{email.Id}/html\u0022);\r\n            var config = Configuration.Default;\r\n            using var context = BrowsingContext.New(config);\r\n            using var doc = await context.OpenAsync(req =\u003E req.Content(emailHtmlResponse));\r\n            outputHelper.WriteLine(doc.Body!.InnerHtml);\r\n\r\n            var message = doc.QuerySelector(\u0022h1\u0022)!.TextContent;\r\n            Assert.Contains(\u0022Thank you for your order!\u0022, message);\r\n        }",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CheckoutPageTests.cs",
+            "snippet": "using (var emailClient = new HttpClient\r\n        { BaseAddress = new Uri(factory.SharedFixture.EmailServerUrl) })\r\n        {\r\n            var emailList = await emailClient.GetFromJsonAsync\u003CIEnumerable\u003CEmailModel\u003E\u003E(\u0022/api/messages\u0022);\r\n            var email = emailList!.FirstOrDefault(e =\u003E e.To == \u0022erik@test.com\u0022);\r\n            Assert.NotNull(email);\r\n            Assert.Contains(\u0022Your CarvedRock Order\u0022, email!.Subject);\r\n            Assert.Equal(\u0022e-commerce@carvedrock.com\u0022, email.From);\r\n\r\n            var emailHtmlResponse = await emailClient.GetStringAsync($\u0022/api/messages/{email.Id}/html\u0022);\r\n            var config = Configuration.Default;\r\n            using var context = BrowsingContext.New(config);\r\n            using var doc = await context.OpenAsync(req =\u003E req.Content(emailHtmlResponse));\r\n            outputHelper.WriteLine(doc.Body!.InnerHtml);\r\n\r\n            var message = doc.QuerySelector(\u0022h1\u0022)!.TextContent;\r\n            Assert.Contains(\u0022Thank you for your order!\u0022, message);\r\n        }",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "properties": {
+              "CharCount": "6158"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 101,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "b7e3f8e5-6d1e-4e08-9bdf-60772127c1ef",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "using (var emailClient = new HttpClient\r\n        { BaseAddress = new Uri(factory.SharedFixture.EmailServerUrl) })\r\n        {\r\n            var emailList = await emailClient.GetFromJsonAsync\u003CIEnumerable\u003CEmailModel\u003E\u003E(\u0022/api/messages\u0022);\r\n            var email = emailList!.FirstOrDefault(e =\u003E e.To == \u0022erik@test.com\u0022);\r\n            Assert.NotNull(email);\r\n            Assert.Contains(\u0022Your CarvedRock Order\u0022, email!.Subject);\r\n            Assert.Equal(\u0022e-commerce@carvedrock.com\u0022, email.From);\r\n\r\n            var emailHtmlResponse = await emailClient.GetStringAsync($\u0022/api/messages/{email.Id}/html\u0022);\r\n            var config = Configuration.Default;\r\n            using var context = BrowsingContext.New(config);\r\n            using var doc = await context.OpenAsync(req =\u003E req.Content(emailHtmlResponse));\r\n            outputHelper.WriteLine(doc.Body!.InnerHtml);\r\n\r\n            var message = doc.QuerySelector(\u0022h1\u0022)!.TextContent;\r\n            Assert.Contains(\u0022Thank you for your order!\u0022, message);\r\n        }",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CheckoutPageTests.cs",
+            "snippet": "using (var emailClient = new HttpClient\r\n        { BaseAddress = new Uri(factory.SharedFixture.EmailServerUrl) })\r\n        {\r\n            var emailList = await emailClient.GetFromJsonAsync\u003CIEnumerable\u003CEmailModel\u003E\u003E(\u0022/api/messages\u0022);\r\n            var email = emailList!.FirstOrDefault(e =\u003E e.To == \u0022erik@test.com\u0022);\r\n            Assert.NotNull(email);\r\n            Assert.Contains(\u0022Your CarvedRock Order\u0022, email!.Subject);\r\n            Assert.Equal(\u0022e-commerce@carvedrock.com\u0022, email.From);\r\n\r\n            var emailHtmlResponse = await emailClient.GetStringAsync($\u0022/api/messages/{email.Id}/html\u0022);\r\n            var config = Configuration.Default;\r\n            using var context = BrowsingContext.New(config);\r\n            using var doc = await context.OpenAsync(req =\u003E req.Content(emailHtmlResponse));\r\n            outputHelper.WriteLine(doc.Body!.InnerHtml);\r\n\r\n            var message = doc.QuerySelector(\u0022h1\u0022)!.TextContent;\r\n            Assert.Contains(\u0022Thank you for your order!\u0022, message);\r\n        }",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "6158"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 101,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "12fd3455-44fb-4a1b-8ccb-4b5774035ff2",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Assert.Equal(\u0022/ThankYou\u0022, checkoutResponse.Headers.Location!.OriginalString);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CheckoutPageTests.cs",
+            "snippet": "Assert.Equal(\u0022/ThankYou\u0022, checkoutResponse.Headers.Location!.OriginalString);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "6158"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 98,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "0a0f52db-10f1-47f2-a3e2-9f59bdf069c1",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var authority = pageResponse.Headers.Location!.Authority;",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CheckoutPageTests.cs",
+            "snippet": "var authority = pageResponse.Headers.Location!.Authority;",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "6158"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 29,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "41439c15-452f-4d6a-8723-8444faca4cd0",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var authority = pageResponse.Headers.Location!.Authority;",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\AdminPageTests.cs",
+            "snippet": "var authority = pageResponse.Headers.Location!.Authority;",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "2094"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 23,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "f1aa2d36-aa9d-4f74-b34c-cd1e5363395a",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CarvedRock.InnerLoop.WebApp.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var authority = pageResponse.Headers.Location!.Authority;",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tests\\CarvedRock.InnerLoop.WebApp.Tests\\CartPageTests.cs",
+            "snippet": "var authority = pageResponse.Headers.Location!.Authority;",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "3671"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 27,
+            "column": 8
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+      "startingProject": true,
+      "issues": 5,
+      "storyPoints": 36,
+      "properties": {
+        "appName": "CarvedRock.WebApp",
+        "projectKind": "AspNetCore",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 42,
+        "numberOfCodeFiles": 32,
+        "linesTotal": 178793,
+        "linesOfCode": 1212,
+        "totalApiScanned": 3792,
+        "minLinesOfCodeToChange": 34,
+        "maxLinesOfCodeToChange": 34
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "6c905d2a-ac25-41ff-9a93-0570bd226397",
+          "ruleId": "NuGet.0002",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Authentication.OpenIdConnect, and replace with new package Microsoft.AspNetCore.Authentication.OpenIdConnect 10.0.12",
+              "protected": "Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Authentication.OpenIdConnect, and replace with new package Microsoft.AspNetCore.Authentication.OpenIdConnect 10.0.12"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+            "snippet": "Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Authentication.OpenIdConnect, and replace with new package Microsoft.AspNetCore.Authentication.OpenIdConnect 10.0.12",
+            "protectedSnippet": "Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.0\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Authentication.OpenIdConnect, and replace with new package Microsoft.AspNetCore.Authentication.OpenIdConnect 10.0.12",
+            "label": "Microsoft.AspNetCore.Authentication.OpenIdConnect 8.0.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "PackageVersion": "8.0.0",
+              "PackageNewVersion": "10.0.12",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "98fe9a4f-7e33-4b07-8604-09042bcc8098",
+          "ruleId": "Project.0002",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net8.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+            "snippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "0553abe3-bd27-46bd-9491-f15a6306fbe8",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var fullPath = $\u0022{Client.BaseAddress}Product\u0022;",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\ProductService.cs",
+            "snippet": "var fullPath = $\u0022{Client.BaseAddress}Product\u0022;",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "4319"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 93,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "9eb3f45f-5818-4c33-b720-c15d610bf427",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var content = await response.Content.ReadAsStringAsync();",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\ProductService.cs",
+            "snippet": "var content = await response.Content.ReadAsStringAsync();",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "4319"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 76,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "0078547d-dee2-4a21-9121-a8c46c883e74",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return await response.Content.ReadFromJsonAsync\u003CList\u003CProductModel\u003E\u003E() ?? [];",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\ProductService.cs",
+            "snippet": "return await response.Content.ReadFromJsonAsync\u003CList\u003CProductModel\u003E\u003E() ?? [];",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "4319"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 58,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "179f1e2f-6273-4180-b8e9-05911bcd7317",
+          "ruleId": "Api.0003",
+          "description": "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var content = await response.Content.ReadAsStringAsync();",
+              "protected": "T:System.Net.Http.HttpContent"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\ProductService.cs",
+            "snippet": "var content = await response.Content.ReadAsStringAsync();",
+            "protectedSnippet": "T:System.Net.Http.HttpContent",
+            "label": "T:System.Net.Http.HttpContent",
+            "properties": {
+              "CharCount": "4319"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/default-http-streaming.md",
+                "isCustom": false
+              }
+            ],
+            "line": 48,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "04d64d34-6857-42f2-8ea5-e08d350f94ef",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var fullPath = $\u0022{Client.BaseAddress}Product?category={category}\u0022;",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\ProductService.cs",
+            "snippet": "var fullPath = $\u0022{Client.BaseAddress}Product?category={category}\u0022;",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "4319"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 46,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "d9596ec3-8ae9-4d24-898c-f4d205981fd7",
+          "ruleId": "Api.0001",
+          "description": "Breaking change: DynamicallyAccessedMembers annotation removed from trim-unsafe configuration APIs ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "client.BaseAddress = new Uri(config.GetValue\u003Cstring\u003E(\u0022CarvedRock:ApiBaseUrl\u0022)!);",
+              "protected": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\ProductService.cs",
+            "snippet": "client.BaseAddress = new Uri(config.GetValue\u003Cstring\u003E(\u0022CarvedRock:ApiBaseUrl\u0022)!);",
+            "protectedSnippet": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "label": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "properties": {
+              "CharCount": "4319"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/extensions/10.0/dynamically-accessed-members-configuration.md",
+                "isCustom": false
+              }
+            ],
+            "line": 25,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "4569a027-fed9-46a0-a3ff-6d7eb0a6fcf6",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "client.BaseAddress = new Uri(config.GetValue\u003Cstring\u003E(\u0022CarvedRock:ApiBaseUrl\u0022)!);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\ProductService.cs",
+            "snippet": "client.BaseAddress = new Uri(config.GetValue\u003Cstring\u003E(\u0022CarvedRock:ApiBaseUrl\u0022)!);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "4319"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 25,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "a07c864a-94db-46f9-bae4-779caef1c16d",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "client.BaseAddress = new Uri(config.GetValue\u003Cstring\u003E(\u0022CarvedRock:ApiBaseUrl\u0022)!);",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\ProductService.cs",
+            "snippet": "client.BaseAddress = new Uri(config.GetValue\u003Cstring\u003E(\u0022CarvedRock:ApiBaseUrl\u0022)!);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "properties": {
+              "CharCount": "4319"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 25,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "bb95faed-c929-4ca0-affc-98ec4687eed1",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "client.BaseAddress = new Uri(config.GetValue\u003Cstring\u003E(\u0022CarvedRock:ApiBaseUrl\u0022)!);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\ProductService.cs",
+            "snippet": "client.BaseAddress = new Uri(config.GetValue\u003Cstring\u003E(\u0022CarvedRock:ApiBaseUrl\u0022)!);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "4319"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 25,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "e1ec9ed8-edba-40b4-85dc-309fcf920cd8",
+          "ruleId": "Api.0001",
+          "description": "Breaking change: DynamicallyAccessedMembers annotation removed from trim-unsafe configuration APIs ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "client.BaseAddress = new Uri(config.GetValue\u003Cstring\u003E(\u0022CarvedRock:ApiBaseUrl\u0022)!);",
+              "protected": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\ProductService.cs",
+            "snippet": "client.BaseAddress = new Uri(config.GetValue\u003Cstring\u003E(\u0022CarvedRock:ApiBaseUrl\u0022)!);",
+            "protectedSnippet": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "label": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "properties": {
+              "CharCount": "4319"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/extensions/10.0/dynamically-accessed-members-configuration.md",
+                "isCustom": false
+              }
+            ],
+            "line": 25,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "6b1ed818-30b7-49c3-a8c2-4bc784b2222d",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "client.BaseAddress = new Uri(config.GetValue\u003Cstring\u003E(\u0022CarvedRock:ApiBaseUrl\u0022)!);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\ProductService.cs",
+            "snippet": "client.BaseAddress = new Uri(config.GetValue\u003Cstring\u003E(\u0022CarvedRock:ApiBaseUrl\u0022)!);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "4319"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 25,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "b8834689-dba1-4d86-a048-3a7cd0fa184f",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "client.BaseAddress = new Uri(config.GetValue\u003Cstring\u003E(\u0022CarvedRock:ApiBaseUrl\u0022)!);",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\ProductService.cs",
+            "snippet": "client.BaseAddress = new Uri(config.GetValue\u003Cstring\u003E(\u0022CarvedRock:ApiBaseUrl\u0022)!);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "properties": {
+              "CharCount": "4319"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 25,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "212493f0-f8d2-4e42-b5a6-edb05dd3cf73",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "client.BaseAddress = new Uri(config.GetValue\u003Cstring\u003E(\u0022CarvedRock:ApiBaseUrl\u0022)!);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\ProductService.cs",
+            "snippet": "client.BaseAddress = new Uri(config.GetValue\u003Cstring\u003E(\u0022CarvedRock:ApiBaseUrl\u0022)!);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "4319"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 25,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "923233c1-6bb1-47d9-b1de-85bd7a6b51ce",
+          "ruleId": "Api.0001",
+          "description": "Breaking change: DynamicallyAccessedMembers annotation removed from trim-unsafe configuration APIs ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var host = config.GetValue\u003Cstring\u003E(\u0022CarvedRock:EmailHost\u0022)!;",
+              "protected": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\EmailService.cs",
+            "snippet": "var host = config.GetValue\u003Cstring\u003E(\u0022CarvedRock:EmailHost\u0022)!;",
+            "protectedSnippet": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "label": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "properties": {
+              "CharCount": "894"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/extensions/10.0/dynamically-accessed-members-configuration.md",
+                "isCustom": false
+              }
+            ],
+            "line": 11,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "0bd4d3f9-a3fa-421e-9b37-4d6796ab9000",
+          "ruleId": "Api.0001",
+          "description": "Breaking change: DynamicallyAccessedMembers annotation removed from trim-unsafe configuration APIs ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var port = config.GetValue\u003Cint\u003E(\u0022CarvedRock:EmailPort\u0022);",
+              "protected": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\EmailService.cs",
+            "snippet": "var port = config.GetValue\u003Cint\u003E(\u0022CarvedRock:EmailPort\u0022);",
+            "protectedSnippet": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "label": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "properties": {
+              "CharCount": "894"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/extensions/10.0/dynamically-accessed-members-configuration.md",
+                "isCustom": false
+              }
+            ],
+            "line": 10,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "38f843fb-4895-44c9-9b40-ee036094e99f",
+          "ruleId": "Api.0001",
+          "description": "Breaking change: DynamicallyAccessedMembers annotation removed from trim-unsafe configuration APIs ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var host = config.GetValue\u003Cstring\u003E(\u0022CarvedRock:EmailHost\u0022)!;",
+              "protected": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\EmailService.cs",
+            "snippet": "var host = config.GetValue\u003Cstring\u003E(\u0022CarvedRock:EmailHost\u0022)!;",
+            "protectedSnippet": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "label": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "properties": {
+              "CharCount": "894"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/extensions/10.0/dynamically-accessed-members-configuration.md",
+                "isCustom": false
+              }
+            ],
+            "line": 11,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "cb69bcd0-3f66-4562-a23a-ac3c370121ef",
+          "ruleId": "Api.0001",
+          "description": "Breaking change: DynamicallyAccessedMembers annotation removed from trim-unsafe configuration APIs ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var port = config.GetValue\u003Cint\u003E(\u0022CarvedRock:EmailPort\u0022);",
+              "protected": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\EmailService.cs",
+            "snippet": "var port = config.GetValue\u003Cint\u003E(\u0022CarvedRock:EmailPort\u0022);",
+            "protectedSnippet": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "label": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "properties": {
+              "CharCount": "894"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/extensions/10.0/dynamically-accessed-members-configuration.md",
+                "isCustom": false
+              }
+            ],
+            "line": 10,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "cc7a02cb-5f42-4f74-9568-f3f9111845cb",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: Exception diagnostics are suppressed when IExceptionHandler.TryHandleAsync returns true ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseExceptionHandler(\u0022/Error\u0022);",
+              "protected": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "app.UseExceptionHandler(\u0022/Error\u0022);",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)",
+            "label": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)",
+            "properties": {
+              "CharCount": "2287"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/aspnet-core/10/exception-handler-diagnostics-suppressed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 60,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "d1b54ce3-6dd6-4526-aedb-cc6e20fd1d00",
+          "ruleId": "Api.0003",
+          "description": "URI query redaction in IHttpClientFactory logs ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddHttpClient();",
+              "protected": "M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient(Microsoft.Extensions.DependencyInjection.IServiceCollection)"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "builder.Services.AddHttpClient();",
+            "protectedSnippet": "M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient(Microsoft.Extensions.DependencyInjection.IServiceCollection)",
+            "label": "M:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient(Microsoft.Extensions.DependencyInjection.IServiceCollection)",
+            "properties": {
+              "CharCount": "2287"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/9.0/query-redaction-logs.md",
+                "isCustom": false
+              }
+            ],
+            "line": 54,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "020ce8e6-fd1b-48ac-aa97-4a0813b8fdd1",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.TokenValidationParameters = new TokenValidationParameters\r\n    {\r\n        NameClaimType = \u0022email\u0022\r\n    };",
+              "protected": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.TokenValidationParameters"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "options.TokenValidationParameters = new TokenValidationParameters\r\n    {\r\n        NameClaimType = \u0022email\u0022\r\n    };",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.TokenValidationParameters",
+            "label": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.TokenValidationParameters",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "2287"
+            },
+            "line": 42,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "af9a09d9-5d08-4e9b-823b-894df0270254",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.GetClaimsFromUserInfoEndpoint = true;",
+              "protected": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.GetClaimsFromUserInfoEndpoint"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "options.GetClaimsFromUserInfoEndpoint = true;",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.GetClaimsFromUserInfoEndpoint",
+            "label": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.GetClaimsFromUserInfoEndpoint",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "2287"
+            },
+            "line": 41,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "9db5e26c-d8fc-41c3-b557-fc529f8bf200",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.Scope.Add(\u0022offline_access\u0022);",
+              "protected": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Scope"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "options.Scope.Add(\u0022offline_access\u0022);",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Scope",
+            "label": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Scope",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "2287"
+            },
+            "line": 40,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "894881f7-5e2b-49e4-96ff-399801e7a3ea",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.Scope.Add(\u0022api\u0022);",
+              "protected": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Scope"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "options.Scope.Add(\u0022api\u0022);",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Scope",
+            "label": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Scope",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "2287"
+            },
+            "line": 39,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "7e874ea9-d28c-42a4-92c8-38739484df0c",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.Scope.Add(\u0022email\u0022);",
+              "protected": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Scope"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "options.Scope.Add(\u0022email\u0022);",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Scope",
+            "label": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Scope",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "2287"
+            },
+            "line": 38,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "19cf0fb7-b48e-45b3-98be-224a5fa5f51b",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.Scope.Add(\u0022profile\u0022);",
+              "protected": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Scope"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "options.Scope.Add(\u0022profile\u0022);",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Scope",
+            "label": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Scope",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "2287"
+            },
+            "line": 37,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "f2658130-92a5-4ec0-a67f-e45843de2cb6",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.Scope.Add(\u0022openid\u0022);",
+              "protected": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Scope"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "options.Scope.Add(\u0022openid\u0022);",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Scope",
+            "label": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Scope",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "2287"
+            },
+            "line": 36,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "79a183a4-61a3-4a5b-8a46-eabbff27d702",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.ResponseType = \u0022code\u0022;",
+              "protected": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.ResponseType"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "options.ResponseType = \u0022code\u0022;",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.ResponseType",
+            "label": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.ResponseType",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "2287"
+            },
+            "line": 35,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "4b978b40-1b79-42f8-88e2-ecbd0a2330fe",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.ClientSecret = \u0022secret\u0022;",
+              "protected": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.ClientSecret"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "options.ClientSecret = \u0022secret\u0022;",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.ClientSecret",
+            "label": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.ClientSecret",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "2287"
+            },
+            "line": 34,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "d5142f43-af21-4726-b42d-b30de88800f6",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.ClientId = \u0022interactive.confidential\u0022;",
+              "protected": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.ClientId"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "options.ClientId = \u0022interactive.confidential\u0022;",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.ClientId",
+            "label": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.ClientId",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "2287"
+            },
+            "line": 33,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "1b2a7625-f954-48f1-ad37-6149b77e6f37",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "options.Authority = \u0022https://demo.duendesoftware.com\u0022;",
+              "protected": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Authority"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "options.Authority = \u0022https://demo.duendesoftware.com\u0022;",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Authority",
+            "label": "P:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions.Authority",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "2287"
+            },
+            "line": 32,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "2a5772a7-1a79-49e9-8154-c3ff13d209cd",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddAuthentication(options =\u003E\r\n{\r\n    options.DefaultScheme = \u0022Cookies\u0022;\r\n    options.DefaultChallengeScheme = \u0022oidc\u0022;      \r\n})\r\n.AddCookie(\u0022Cookies\u0022, options =\u003E options.AccessDeniedPath = \u0022/AccessDenied\u0022)\r\n.AddOpenIdConnect(\u0022oidc\u0022, options =\u003E\r\n{\r\n    options.Authority = \u0022https://demo.duendesoftware.com\u0022;\r\n    options.ClientId = \u0022interactive.confidential\u0022;\r\n    options.ClientSecret = \u0022secret\u0022;\r\n    options.ResponseType = \u0022code\u0022;\r\n    options.Scope.Add(\u0022openid\u0022);\r\n    options.Scope.Add(\u0022profile\u0022);\r\n    options.Scope.Add(\u0022email\u0022);\r\n    options.Scope.Add(\u0022api\u0022);\r\n    options.Scope.Add(\u0022offline_access\u0022);\r\n    options.GetClaimsFromUserInfoEndpoint = true;\r\n    options.TokenValidationParameters = new TokenValidationParameters\r\n    {\r\n        NameClaimType = \u0022email\u0022\r\n    };    \r\n    options.SaveTokens = true;\r\n});",
+              "protected": "T:Microsoft.Extensions.DependencyInjection.OpenIdConnectExtensions"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "builder.Services.AddAuthentication(options =\u003E\r\n{\r\n    options.DefaultScheme = \u0022Cookies\u0022;\r\n    options.DefaultChallengeScheme = \u0022oidc\u0022;      \r\n})\r\n.AddCookie(\u0022Cookies\u0022, options =\u003E options.AccessDeniedPath = \u0022/AccessDenied\u0022)\r\n.AddOpenIdConnect(\u0022oidc\u0022, options =\u003E\r\n{\r\n    options.Authority = \u0022https://demo.duendesoftware.com\u0022;\r\n    options.ClientId = \u0022interactive.confidential\u0022;\r\n    options.ClientSecret = \u0022secret\u0022;\r\n    options.ResponseType = \u0022code\u0022;\r\n    options.Scope.Add(\u0022openid\u0022);\r\n    options.Scope.Add(\u0022profile\u0022);\r\n    options.Scope.Add(\u0022email\u0022);\r\n    options.Scope.Add(\u0022api\u0022);\r\n    options.Scope.Add(\u0022offline_access\u0022);\r\n    options.GetClaimsFromUserInfoEndpoint = true;\r\n    options.TokenValidationParameters = new TokenValidationParameters\r\n    {\r\n        NameClaimType = \u0022email\u0022\r\n    };    \r\n    options.SaveTokens = true;\r\n});",
+            "protectedSnippet": "T:Microsoft.Extensions.DependencyInjection.OpenIdConnectExtensions",
+            "label": "T:Microsoft.Extensions.DependencyInjection.OpenIdConnectExtensions",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "2287"
+            },
+            "line": 24,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "9fbce138-82b5-449c-b06a-f9af50797f90",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.OpenIdConnect, 8.0.6",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddAuthentication(options =\u003E\r\n{\r\n    options.DefaultScheme = \u0022Cookies\u0022;\r\n    options.DefaultChallengeScheme = \u0022oidc\u0022;      \r\n})\r\n.AddCookie(\u0022Cookies\u0022, options =\u003E options.AccessDeniedPath = \u0022/AccessDenied\u0022)\r\n.AddOpenIdConnect(\u0022oidc\u0022, options =\u003E\r\n{\r\n    options.Authority = \u0022https://demo.duendesoftware.com\u0022;\r\n    options.ClientId = \u0022interactive.confidential\u0022;\r\n    options.ClientSecret = \u0022secret\u0022;\r\n    options.ResponseType = \u0022code\u0022;\r\n    options.Scope.Add(\u0022openid\u0022);\r\n    options.Scope.Add(\u0022profile\u0022);\r\n    options.Scope.Add(\u0022email\u0022);\r\n    options.Scope.Add(\u0022api\u0022);\r\n    options.Scope.Add(\u0022offline_access\u0022);\r\n    options.GetClaimsFromUserInfoEndpoint = true;\r\n    options.TokenValidationParameters = new TokenValidationParameters\r\n    {\r\n        NameClaimType = \u0022email\u0022\r\n    };    \r\n    options.SaveTokens = true;\r\n});",
+              "protected": "M:Microsoft.Extensions.DependencyInjection.OpenIdConnectExtensions.AddOpenIdConnect(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.Action{Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions})"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "builder.Services.AddAuthentication(options =\u003E\r\n{\r\n    options.DefaultScheme = \u0022Cookies\u0022;\r\n    options.DefaultChallengeScheme = \u0022oidc\u0022;      \r\n})\r\n.AddCookie(\u0022Cookies\u0022, options =\u003E options.AccessDeniedPath = \u0022/AccessDenied\u0022)\r\n.AddOpenIdConnect(\u0022oidc\u0022, options =\u003E\r\n{\r\n    options.Authority = \u0022https://demo.duendesoftware.com\u0022;\r\n    options.ClientId = \u0022interactive.confidential\u0022;\r\n    options.ClientSecret = \u0022secret\u0022;\r\n    options.ResponseType = \u0022code\u0022;\r\n    options.Scope.Add(\u0022openid\u0022);\r\n    options.Scope.Add(\u0022profile\u0022);\r\n    options.Scope.Add(\u0022email\u0022);\r\n    options.Scope.Add(\u0022api\u0022);\r\n    options.Scope.Add(\u0022offline_access\u0022);\r\n    options.GetClaimsFromUserInfoEndpoint = true;\r\n    options.TokenValidationParameters = new TokenValidationParameters\r\n    {\r\n        NameClaimType = \u0022email\u0022\r\n    };    \r\n    options.SaveTokens = true;\r\n});",
+            "protectedSnippet": "M:Microsoft.Extensions.DependencyInjection.OpenIdConnectExtensions.AddOpenIdConnect(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.Action{Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions})",
+            "label": "M:Microsoft.Extensions.DependencyInjection.OpenIdConnectExtensions.AddOpenIdConnect(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.Action{Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectOptions})",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.OpenIdConnect",
+              "PackageNewVersion": "8.0.6",
+              "CharCount": "2287"
+            },
+            "line": 24,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "86c34fab-3db0-43a1-ae59-cba8b949d5c8",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "JwtSecurityTokenHandler.DefaultMapInboundClaims = false;",
+              "protected": "T:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "JwtSecurityTokenHandler.DefaultMapInboundClaims = false;",
+            "protectedSnippet": "T:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler",
+            "label": "T:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler",
+            "properties": {
+              "CharCount": "2287"
+            },
+            "line": 23,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "429141d8-2c3a-4a71-ab80-69638b4bdb40",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "CarvedRock.WebApp\\CarvedRock.WebApp.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "JwtSecurityTokenHandler.DefaultMapInboundClaims = false;",
+              "protected": "F:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.DefaultMapInboundClaims"
+            },
+            "kind": "File",
+            "path": "CarvedRock.WebApp\\Program.cs",
+            "snippet": "JwtSecurityTokenHandler.DefaultMapInboundClaims = false;",
+            "protectedSnippet": "F:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.DefaultMapInboundClaims",
+            "label": "F:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.DefaultMapInboundClaims",
+            "properties": {
+              "CharCount": "2287"
+            },
+            "line": 23,
+            "column": 0
+          }
+        }
+      ],
+      "features": [
+        {
+          "featureId": "IdentityModel",
+          "incidents": [
+            "429141d8-2c3a-4a71-ab80-69638b4bdb40",
+            "86c34fab-3db0-43a1-ae59-cba8b949d5c8"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "tools\\WireMockApiServer\\WireMockApiServer.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "WireMockApiServer",
+        "projectKind": "DotNetCoreApp",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 2,
+        "numberOfCodeFiles": 1,
+        "linesTotal": 454,
+        "linesOfCode": 12,
+        "totalApiScanned": 18,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "37c013ea-bea3-4d7c-9a9c-623a1f993976",
+          "ruleId": "Project.0002",
+          "projectPath": "tools\\WireMockApiServer\\WireMockApiServer.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net8.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "tools\\WireMockApiServer\\WireMockApiServer.csproj",
+            "snippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "tools\\WireMockRecorder\\WireMockRecorder.csproj",
+      "startingProject": true,
+      "issues": 4,
+      "storyPoints": 7,
+      "properties": {
+        "appName": "WireMockRecorder",
+        "projectKind": "DotNetCoreApp",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 1,
+        "numberOfCodeFiles": 1,
+        "linesTotal": 32,
+        "linesOfCode": 32,
+        "totalApiScanned": 48,
+        "minLinesOfCodeToChange": 5,
+        "maxLinesOfCodeToChange": 5
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "7a50289b-6d6e-4be4-83a5-e38f99bae63f",
+          "ruleId": "NuGet.0002",
+          "projectPath": "tools\\WireMockRecorder\\WireMockRecorder.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Configuration.UserSecrets, 6.0.1\n\nRecommendation:\n\nRemove Microsoft.Extensions.Configuration.UserSecrets, and replace with new package Microsoft.Extensions.Configuration.UserSecrets 10.0.12",
+              "protected": "Microsoft.Extensions.Configuration.UserSecrets, 6.0.1\n\nRecommendation:\n\nRemove Microsoft.Extensions.Configuration.UserSecrets, and replace with new package Microsoft.Extensions.Configuration.UserSecrets 10.0.12"
+            },
+            "kind": "File",
+            "path": "tools\\WireMockRecorder\\WireMockRecorder.csproj",
+            "snippet": "Microsoft.Extensions.Configuration.UserSecrets, 6.0.1\n\nRecommendation:\n\nRemove Microsoft.Extensions.Configuration.UserSecrets, and replace with new package Microsoft.Extensions.Configuration.UserSecrets 10.0.12",
+            "protectedSnippet": "Microsoft.Extensions.Configuration.UserSecrets, 6.0.1\n\nRecommendation:\n\nRemove Microsoft.Extensions.Configuration.UserSecrets, and replace with new package Microsoft.Extensions.Configuration.UserSecrets 10.0.12",
+            "label": "Microsoft.Extensions.Configuration.UserSecrets 6.0.1",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Configuration.UserSecrets",
+              "PackageVersion": "6.0.1",
+              "PackageNewVersion": "10.0.12",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "c293cbc6-d1d2-4055-8bde-ab1cf73a3e55",
+          "ruleId": "Project.0002",
+          "projectPath": "tools\\WireMockRecorder\\WireMockRecorder.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net8.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net8.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "tools\\WireMockRecorder\\WireMockRecorder.csproj",
+            "snippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net8.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "ccf16df0-a818-411e-b52d-d95e7f32ce89",
+          "ruleId": "Api.0001",
+          "description": "Breaking change: DynamicallyAccessedMembers annotation removed from trim-unsafe configuration APIs ",
+          "projectPath": "tools\\WireMockRecorder\\WireMockRecorder.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "client.DefaultRequestHeaders.Add(\u0022Authorization\u0022, $\u0022Bearer {config.GetValue\u003Cstring\u003E(\u0022MovieApiKey\u0022)}\u0022);",
+              "protected": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)"
+            },
+            "kind": "File",
+            "path": "tools\\WireMockRecorder\\Program.cs",
+            "snippet": "client.DefaultRequestHeaders.Add(\u0022Authorization\u0022, $\u0022Bearer {config.GetValue\u003Cstring\u003E(\u0022MovieApiKey\u0022)}\u0022);",
+            "protectedSnippet": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "label": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "properties": {
+              "CharCount": "1084"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/extensions/10.0/dynamically-accessed-members-configuration.md",
+                "isCustom": false
+              }
+            ],
+            "line": 27,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "baa36e31-3170-4364-bb94-4243c2b977e2",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tools\\WireMockRecorder\\WireMockRecorder.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "using var client = new HttpClient() { BaseAddress = new Uri(server.Urls[0]) };",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tools\\WireMockRecorder\\Program.cs",
+            "snippet": "using var client = new HttpClient() { BaseAddress = new Uri(server.Urls[0]) };",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "1084"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 26,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "593317b7-f65c-4813-9c2d-237be114eafb",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tools\\WireMockRecorder\\WireMockRecorder.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "using var client = new HttpClient() { BaseAddress = new Uri(server.Urls[0]) };",
+              "protected": "M:System.Uri.#ctor(System.String)"
+            },
+            "kind": "File",
+            "path": "tools\\WireMockRecorder\\Program.cs",
+            "snippet": "using var client = new HttpClient() { BaseAddress = new Uri(server.Urls[0]) };",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String)",
+            "label": "M:System.Uri.#ctor(System.String)",
+            "properties": {
+              "CharCount": "1084"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 26,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "af682597-763b-452e-b37a-7c2022c79fcf",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "tools\\WireMockRecorder\\WireMockRecorder.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "using var client = new HttpClient() { BaseAddress = new Uri(server.Urls[0]) };",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "tools\\WireMockRecorder\\Program.cs",
+            "snippet": "using var client = new HttpClient() { BaseAddress = new Uri(server.Urls[0]) };",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "properties": {
+              "CharCount": "1084"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 26,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "5cda3ffb-addd-4bcb-b9d2-9aeaaefedbc1",
+          "ruleId": "Api.0001",
+          "description": "Breaking change: DynamicallyAccessedMembers annotation removed from trim-unsafe configuration APIs ",
+          "projectPath": "tools\\WireMockRecorder\\WireMockRecorder.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var secret = config.GetValue\u003Cstring\u003E(\u0022MovieApiKey\u0022);",
+              "protected": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)"
+            },
+            "kind": "File",
+            "path": "tools\\WireMockRecorder\\Program.cs",
+            "snippet": "var secret = config.GetValue\u003Cstring\u003E(\u0022MovieApiKey\u0022);",
+            "protectedSnippet": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "label": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "properties": {
+              "CharCount": "1084"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/extensions/10.0/dynamically-accessed-members-configuration.md",
+                "isCustom": false
+              }
+            ],
+            "line": 24,
+            "column": 0
+          }
+        }
+      ],
+      "features": []
+    }
+  ],
+  "rules": {
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "NuGet package upgrade is recommended for selected target framework.\n\nStandard .NET packages are recommended to have versions matching version of .NET that project targets.\n\nSome other packages also are known to work better for selected target frameworks.",
+      "label": "NuGet package upgrade is recommended",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0004": {
+      "id": "NuGet.0004",
+      "isFeature": false,
+      "description": "NuGet package contains security vulnerabilities.\n\nPackage needs to be upgraded to a newer version that addresses known security vulnerabilities.",
+      "label": "NuGet package contains security vulnerability",
+      "severity": "Optional",
+      "effort": 1
+    },
+    "Api.0003": {
+      "id": "Api.0003",
+      "isFeature": false,
+      "description": "API has a behavioral change in selected .NET version: code and binaries may behave differently at runtime without needing recompilation, but the new behavior might be undesirable and require updates.",
+      "label": "Behavioral change in selected .NET version",
+      "severity": "Potential",
+      "effort": 1
+    },
+    "Api.0001": {
+      "id": "Api.0001",
+      "isFeature": false,
+      "description": "API is binary incompatible for selected .NET version: affects existing binaries, often requiring recompilation, because the API has changed in a way that prevents older binaries from loading or executing.",
+      "label": "Binary incompatible for selected .NET version",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0002": {
+      "id": "Api.0002",
+      "isFeature": false,
+      "description": "API is source incompatible for selected .NET version: requires code changes to compile successfully when targeting a new version, such as removing obsolete APIs or changing method signatures.",
+      "label": "Source incompatible for selected .NET version",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "IdentityModel": {
+      "id": "IdentityModel",
+      "isFeature": false,
+      "description": "Windows Identity Foundation (WIF), SAML, and claims-based authentication APIs that have been replaced by modern identity libraries. WIF was the original identity framework for .NET Framework. Migrate to Microsoft.IdentityModel.* packages (modern identity stack).",
+      "label": "IdentityModel \u0026 Claims-based Security",
+      "severity": "Mandatory",
+      "effort": 4,
+      "links": [
+        {
+          "title": "Microsoft.IdentityModel packages",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2341614",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0005": {
+      "id": "NuGet.0005",
+      "isFeature": false,
+      "description": "NuGet package is deprecated.\n\nGo to its documentation and if there is a guidance for replacement of functionality provided by this package.",
+      "label": "NuGet package is deprecated",
+      "severity": "Optional",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262531",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}

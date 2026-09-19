@@ -5,6 +5,7 @@ using Testcontainers.PostgreSql;
 using Testcontainers.MsSql;
 using DotNet.Testcontainers.Builders;
 using DotNet.Testcontainers.Containers;
+using System.Diagnostics;
 using RestEase;
 using WireMock.Client;
 using WireMock.Server;
@@ -31,55 +32,70 @@ public class SharedFixture : IAsyncLifetime
 
     // see sqlite docs for more options
     public const string DatabaseName = "InMemTestDb;Mode=Memory;Cache=Shared;";
-    public string PostgresConnectionString => _dbContainer.GetConnectionString();
-    public string SqlConnectionString => _sqlContainer.GetConnectionString();
+    public string PostgresConnectionString => _dbContainer?.GetConnectionString() ?? string.Empty;
+    public string SqlConnectionString => _sqlContainer?.GetConnectionString() ?? string.Empty;
 
     private string? _mockServerUrl;
 
     public List<Product>? OriginalProducts { get; private set; }
 
     private LocalContext? _dbContext;
-    private readonly PostgreSqlContainer _dbContainer = 
-        new PostgreSqlBuilder()
-        .WithDatabase("carvedrock")        
-        .WithUsername("carvedrock")
-        .WithPassword("innerloop-ftw!")
-        .Build();
-
-    private readonly MsSqlContainer _sqlContainer =
-        new MsSqlBuilder()
-        .WithPassword("1nnerLoop-ftw!")
-        .Build();
+    private PostgreSqlContainer? _dbContainer;
+    private MsSqlContainer? _sqlContainer;
 
     // Custom SQL Server -------------------------------------------------------    
-    private readonly IContainer _customSqlContainer = new ContainerBuilder()
-        .WithImage("localhost/carvedrock/sqlserver") 
-        .WithEnvironment("SA_PASSWORD", "Custom1zationRocks!")
-        .WithPortBinding(1433, assignRandomHostPort: true)
-        .WithWaitStrategy(Wait.ForUnixContainer().UntilMessageIsLogged("Starting up database 'CarvedRock'."))
-        .WithCleanUp(true)
-        .Build();
+    private IContainer? _customSqlContainer;
 
     public string CustomSqlConnectionString =>
-        $"Server=127.0.0.1,{_customSqlContainer.GetMappedPublicPort(1433)};" +
-        "Database=carvedrock;" +
-        "User=sa;" +
-        "Password=Custom1zationRocks!;" +
-        "MultipleActiveResultSets=true;" +
-        "TrustServerCertificate=true;";
+        _customSqlContainer != null
+        ? $"Server=127.0.0.1,{_customSqlContainer.GetMappedPublicPort(1433)};" +
+          "Database=carvedrock;" +
+          "User=sa;" +
+          "Password=Custom1zationRocks!;" +
+          "MultipleActiveResultSets=true;" +
+          "TrustServerCertificate=true;"
+        : string.Empty;
     // ----------------------------------------------------
 
     public async Task InitializeAsync()
     {
-        // Postgres -----------------------------
-        //await _dbContainer.StartAsync();
+        // Try to initialize Testcontainers only if Docker is available.
+        bool dockerAvailable = IsDockerAvailable();
+        if (dockerAvailable)
+        {
+            try
+            {
+                // Use explicit image constructors to avoid obsolete parameterless constructors
+                _dbContainer = new PostgreSqlBuilder("postgres:15-alpine")
+                    .WithDatabase("carvedrock")
+                    .WithUsername("carvedrock")
+                    .WithPassword("innerloop-ftw!")
+                    .Build();
 
-        //var optionsBuilder = new DbContextOptionsBuilder<LocalContext>()
-        //    .UseNpgsql(PostgresConnectionString);
-        //_dbContext = new LocalContext(optionsBuilder.Options);
-        //---------------------------------------
+                _sqlContainer = new MsSqlBuilder("mcr.microsoft.com/mssql/server:2022-latest")
+                    .WithPassword("1nnerLoop-ftw!")
+                    .Build();
 
-        //SQLite --------------------------------
+                _customSqlContainer = new ContainerBuilder("localhost/carvedrock/sqlserver")
+                    .WithEnvironment("SA_PASSWORD", "Custom1zationRocks!")
+                    .WithPortBinding(1433, assignRandomHostPort: true)
+                    .WithWaitStrategy(Wait.ForUnixContainer().UntilMessageIsLogged("Starting up database 'CarvedRock'."))
+                    .WithCleanUp(true)
+                    .Build();
+
+                // Start containers if built
+                await _dbContainer.StartAsync();
+                await _sqlContainer.StartAsync();
+                await _customSqlContainer.StartAsync();
+            }
+            catch
+            {
+                // If any container initialization fails, fall back to SQLite in-memory
+                dockerAvailable = false;
+            }
+        }
+
+        // SQLite fallback (used when Docker/Testcontainers are not available)
         var options = new DbContextOptionsBuilder<LocalContext>()
             .UseSqlite($"Data Source={DatabaseName}")
             .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
@@ -90,7 +106,6 @@ public class SharedFixture : IAsyncLifetime
         await _dbContext.Database.EnsureDeletedAsync();
         await _dbContext.Database.EnsureCreatedAsync();
         await _dbContext.Database.OpenConnectionAsync();
-        //---------------------------------------
 
         // SQL Server ---------------------------
         //await _sqlContainer.StartAsync(); // built-in testcontainer sql
@@ -138,6 +153,51 @@ public class SharedFixture : IAsyncLifetime
         if (_dbContext != null)
         {
             await _dbContext.DisposeAsync();
+        }
+
+        // Stop and dispose containers if they were started
+        if (_dbContainer != null)
+        {
+            try { await _dbContainer.StopAsync(); } catch { }
+            _dbContainer = null;
+        }
+
+        if (_sqlContainer != null)
+        {
+            try { await _sqlContainer.StopAsync(); } catch { }
+            _sqlContainer = null;
+        }
+
+        if (_customSqlContainer != null)
+        {
+            try { await _customSqlContainer.StopAsync(); } catch { }
+            _customSqlContainer = null;
+        }
+    }
+
+    private static bool IsDockerAvailable()
+    {
+        try
+        {
+            var psi = new ProcessStartInfo("docker", "info")
+            {
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
+            using var p = Process.Start(psi);
+            if (p == null) return false;
+            if (!p.WaitForExit(3000))
+            {
+                try { p.Kill(); } catch { }
+                return false;
+            }
+            return p.ExitCode == 0;
+        }
+        catch
+        {
+            return false;
         }
     }
 }

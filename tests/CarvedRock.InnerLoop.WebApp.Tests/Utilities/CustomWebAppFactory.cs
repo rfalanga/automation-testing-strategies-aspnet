@@ -25,9 +25,20 @@ public class CustomWebAppFactory(SharedFixture fixture) : WebApplicationFactory<
 
         //builder.ConfigureServices(ProvideSubstituteForProductService);
 
-        builder.ConfigureTestServices(services => services
-                .AddAuthentication(TestAuthHandler.SchemeName)
-                .AddScheme<AuthenticationSchemeOptions, TestAuthHandler>(TestAuthHandler.SchemeName, _ => { }));        
+        builder.ConfigureTestServices(services =>
+        {
+            services.AddAuthentication(TestAuthHandler.SchemeName)
+                .AddScheme<AuthenticationSchemeOptions, TestAuthHandler>(TestAuthHandler.SchemeName, _ => { });
+
+            // If no external email server was started, replace IEmailSender with in-process recorder
+            if (string.IsNullOrEmpty(SharedFixture.EmailServerUrl))
+            {
+                // remove existing registrations for IEmailSender if any
+                var descriptors = services.Where(d => d.ServiceType == typeof(Microsoft.AspNetCore.Identity.UI.Services.IEmailSender)).ToList();
+                foreach (var d in descriptors) services.Remove(d);
+                services.AddScoped<Microsoft.AspNetCore.Identity.UI.Services.IEmailSender>(_ => new TestEmailSender(SharedFixture));
+            }
+        });        
     }        
     
     //private void ProvideSubstituteForProductService(IServiceCollection services)

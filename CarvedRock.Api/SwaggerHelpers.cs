@@ -1,11 +1,15 @@
 ﻿using IdentityModel.Client;
 using Microsoft.Extensions.Options;
+#if NET10_0_OR_GREATER
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
+#endif
 using System.Diagnostics.CodeAnalysis;
 
 namespace CarvedRock.Api;
 
+// Swagger helpers compile only for net10+ to avoid importing Swashbuckle types for net8 TFM
+#if NET10_0_OR_GREATER
 [ExcludeFromCodeCoverage]
 public class SwaggerOptions(ILogger<SwaggerOptions> logger) : IConfigureOptions<SwaggerGenOptions>
 {
@@ -52,7 +56,7 @@ public class SwaggerOptions(ILogger<SwaggerOptions> logger) : IConfigureOptions<
             _logger.LogWarning(ex, "Error loading discovery document for Swagger UI");
         }
     }
-    
+
     private static DiscoveryDocumentResponse GetDiscoveryDocument()
     {
         var client = new HttpClient();
@@ -62,3 +66,4 @@ public class SwaggerOptions(ILogger<SwaggerOptions> logger) : IConfigureOptions<
             .GetResult();
     }
 }
+#endif

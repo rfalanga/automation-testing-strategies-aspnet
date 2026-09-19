@@ -3,7 +3,9 @@ using CarvedRock.Data.Entities;
 using CarvedRock.Domain;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+#if NET10_0_OR_GREATER
 using Swashbuckle.AspNetCore.Annotations;
+#endif
 
 namespace CarvedRock.Api.Controllers;
 
@@ -38,7 +40,9 @@ public partial class ProductController(ILogger<ProductController> logger, IProdu
 
     [HttpPost]
     [Authorize(Roles = "admin")]
+#if NET10_0_OR_GREATER
     [SwaggerOperation("Creates a single product.")]
+#endif
     [ProducesResponseType<ProductModel>(StatusCodes.Status201Created)]
     [ProducesResponseType<ProblemDetails>(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> CreateProduct([FromBody] NewProductModel newProduct)
