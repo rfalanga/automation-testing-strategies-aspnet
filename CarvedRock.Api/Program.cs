@@ -90,7 +90,8 @@ builder.Services.AddDbContext<LocalContext>(options => options
 
 builder.Services.AddScoped<ICarvedRockRepository, CarvedRockRepository>();
 
-builder.Services.AddAutoMapper(typeof(ProductMappingProfile));
+// Register AutoMapper profiles explicitly to match upgraded AutoMapper extensions
+builder.Services.AddAutoMapper(cfg => cfg.AddProfile<ProductMappingProfile>());
 builder.Services.AddValidatorsFromAssemblyContaining<NewProductValidator>();
 
 var app = builder.Build();
