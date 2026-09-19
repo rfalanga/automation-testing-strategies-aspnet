@@ -63,13 +63,7 @@ public class SharedFixture : IAsyncLifetime
     public string EmailServerUrl => $"http://localhost:{_emailContainer.GetMappedPublicPort(80)}";
     public ushort EmailPort => _emailContainer.GetMappedPublicPort(25);
 
-    private IContainer? _emailContainer = new ContainerBuilder()
-        .WithImage("rnwood/smtp4dev")
-        .WithPortBinding(25, assignRandomHostPort: true)
-        .WithPortBinding(80, assignRandomHostPort: true)
-        .WithWaitStrategy(Wait.ForUnixContainer().UntilMessageIsLogged("Now listening on:"))
-        .WithCleanUp(true)
-        .Build();
+    private IContainer? _emailContainer;
 
     private static bool IsDockerAvailable()
     {
