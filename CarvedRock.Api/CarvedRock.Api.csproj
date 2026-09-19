@@ -11,6 +11,11 @@
     <GenerateOpenApiDocuments>false</GenerateOpenApiDocuments>
   </PropertyGroup>
 
+  <!-- Explicitly exclude problematic ApiDescription.Server package for net8.0 to avoid invoking its targets at build time -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <PackageReference Include="Microsoft.Extensions.ApiDescription.Server" Version="6.0.5" ExcludeAssets="all" />
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="IdentityModel" Version="6.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
