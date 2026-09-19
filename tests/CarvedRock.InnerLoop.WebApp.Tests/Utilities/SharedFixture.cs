@@ -2,6 +2,7 @@
 using CarvedRock.Core;
 using DotNet.Testcontainers.Builders;
 using DotNet.Testcontainers.Containers;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using WireMock;
 using WireMock.RequestBuilders;
@@ -33,8 +34,20 @@ public class SharedFixture : IAsyncLifetime
         .RuleFor(p => p.ImgUrl, f => f.Image.PicsumUrl());    
 
     public async Task InitializeAsync()
-    {       
-        await _emailContainer.StartAsync();
+    {
+        bool dockerAvailable = IsDockerAvailable();
+        if (dockerAvailable)
+        {
+            try
+            {
+                await _emailContainer.StartAsync();
+            }
+            catch
+            {
+                // fall back to in-process mocks if container start fails
+                dockerAvailable = false;
+            }
+        }
 
         OriginalProducts = ProductFaker.Generate(10);
 
@@ -50,13 +63,39 @@ public class SharedFixture : IAsyncLifetime
     public string EmailServerUrl => $"http://localhost:{_emailContainer.GetMappedPublicPort(80)}";
     public ushort EmailPort => _emailContainer.GetMappedPublicPort(25);
 
-    private readonly IContainer _emailContainer = new ContainerBuilder()
+    private IContainer? _emailContainer = new ContainerBuilder()
         .WithImage("rnwood/smtp4dev")
         .WithPortBinding(25, assignRandomHostPort: true)
         .WithPortBinding(80, assignRandomHostPort: true)
         .WithWaitStrategy(Wait.ForUnixContainer().UntilMessageIsLogged("Now listening on:"))
         .WithCleanUp(true)
         .Build();
+
+    private static bool IsDockerAvailable()
+    {
+        try
+        {
+            var psi = new ProcessStartInfo("docker", "info")
+            {
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
+            using var p = Process.Start(psi);
+            if (p == null) return false;
+            if (!p.WaitForExit(3000))
+            {
+                try { p.Kill(); } catch { }
+                return false;
+            }
+            return p.ExitCode == 0;
+        }
+        catch
+        {
+            return false;
+        }
+    }
 
     //// WireMock for Product Service --------------------
     public string ProductServiceUrl { get; private set; } = null!;
