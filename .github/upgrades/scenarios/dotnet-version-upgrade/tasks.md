@@ -1,0 +1,3 @@
+- 🔧 01-assessment: Run assessment
+- 📝 02-planning: Create upgrade plan
+- 🛠️ 03-execution: Execute tasks
