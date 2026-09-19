@@ -60,8 +60,8 @@ public class SharedFixture : IAsyncLifetime
     }
 
     // SMTP4DEV Email Server ---------------------------
-    public string EmailServerUrl => $"http://localhost:{_emailContainer.GetMappedPublicPort(80)}";
-    public ushort EmailPort => _emailContainer.GetMappedPublicPort(25);
+    public string EmailServerUrl => _emailContainer != null ? $"http://localhost:{_emailContainer.GetMappedPublicPort(80)}" : string.Empty;
+    public ushort EmailPort => _emailContainer != null ? (ushort)_emailContainer.GetMappedPublicPort(25) : (ushort)0;
 
     private IContainer? _emailContainer;
 
