@@ -1,3 +1,4 @@
 - 🔧 01-assessment: Run assessment
 - 📝 02-planning: Create upgrade plan
+ - 🔄 02.01-audit-advisories: Audit runtime advisories ([Content](tasks/02.01-audit-advisories/task.md), [Progress](tasks/02.01-audit-advisories/progress-details.md))
 - 🛠️ 03-execution: Execute tasks

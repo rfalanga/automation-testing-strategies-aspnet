@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HealthChecks.OpenIdConnectServer</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Extensions.DependencyInjection.OpenIdConnectServerHealthCheckBuilderExtensions">
+            <summary>
+            Extension methods to configure <see cref="T:HealthChecks.OpenIdConnectServer.OpenIdConnectServerHealthCheck"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.OpenIdConnectServerHealthCheckBuilderExtensions.AddOpenIdConnectServer(Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder,System.Uri,System.String,System.Boolean,System.String,System.Nullable{Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.TimeSpan})">
+            <summary>
+            Add a health check for OpenID Connect server.
+            </summary>
+            <param name="builder">The <see cref="T:Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder"/>.</param>
+            <param name="oidcSvrUri">The uri of the OpenID Connect server to check.</param>
+            <param name="discoverConfigurationSegment">OpenID Connect server discover configuration segment.</param>
+            <param name="isDynamicOpenIdProvider">Set to true if the health check shall validate the existence of code, id_token, and the id_token token in the reponse type values.</param>
+            <param name="name">The health check name. Optional. If <c>null</c> the type name 'oidcserver' will be used for the name.</param>
+            <param name="failureStatus">
+            The <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus"/> that should be reported when the health check fails. Optional. If <c>null</c> then
+            the default status of <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy"/> will be reported.
+            </param>
+            <param name="tags">A list of tags that can be used to filter sets of health checks. Optional.</param>
+            <param name="timeout">An optional <see cref="T:System.TimeSpan"/> representing the timeout of the check.</param>
+            <returns>The specified <paramref name="builder"/>.</returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.OpenIdConnectServerHealthCheckBuilderExtensions.AddOpenIdConnectServer(Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder,System.Func{System.IServiceProvider,System.Uri},System.String,System.Boolean,System.String,System.Nullable{Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.TimeSpan})">
+            <summary>
+            Add a health check for OpenID Connect server.
+            </summary>
+            <param name="builder">The <see cref="T:Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder"/>.</param>
+            <param name="uriProvider">Factory for providing the uri of the OpenID Connect server to check.</param>
+            <param name="discoverConfigurationSegment">OpenID Connect server discover configuration segment.</param>
+            <param name="isDynamicOpenIdProvider">Set to true if the health check shall validate the existence of code, id_token, and the id_token token in the reponse type values.</param>
+            <param name="name">The health check name. Optional. If <c>null</c> the type name 'oidcserver' will be used for the name.</param>
+            <param name="failureStatus"></param>
+            The <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus"/> that should be reported when the health check fails. Optional. If <c>null</c> then
+            the default status of <see cref="F:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus.Unhealthy"/> will be reported.
+            <param name="tags">A list of tags that can be used to filter sets of health checks. Optional.</param>
+            <param name="timeout">An optional <see cref="T:System.TimeSpan"/> representing the timeout of the check.</param>
+            <returns>The specified <paramref name="builder"/>.</returns>
+        </member>
+        <member name="M:HealthChecks.OpenIdConnectServer.DiscoveryEndpointResponse.ValidateResponse(System.Boolean)">
+            <summary>
+            Validates Discovery response according to the <see href="https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata">OpenID specification</see>
+            </summary>
+        </member>
+        <member name="M:HealthChecks.OpenIdConnectServer.OpenIdConnectServerHealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:ApiMarker">
+            <summary>
+            Used for test purposes only.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.NotNullAttribute">
+            <summary>Specifies that an output will not be null even if the corresponding type allows it. Specifies that an input argument was not null when the call returns.</summary>
+        </member>
+        <member name="M:Guard.ThrowIfNull``1(``0,System.Boolean,System.String)">
+            <summary>Throws an <see cref="T:System.ArgumentNullException"/> if <paramref name="argument"/> is null.</summary>
+            <param name="argument">The reference type argument to validate as non-null.</param>
+            <param name="throwOnEmptyString">Only applicable to strings.</param>
+            <param name="paramName">The name of the parameter with which <paramref name="argument"/> corresponds.</param>
+        </member>
+    </members>
+</doc>

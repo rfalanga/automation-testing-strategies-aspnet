@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>OpenTelemetry.Api</id>
+    <version>1.5.0</version>
+    <authors>OpenTelemetry Authors</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <icon>opentelemetry-icon-color.png</icon>
+    <projectUrl>https://opentelemetry.io/</projectUrl>
+    <description>OpenTelemetry .NET API</description>
+    <tags>Observability OpenTelemetry Monitoring Telemetry Tracing</tags>
+    <repository type="git" url="https://github.com/open-telemetry/opentelemetry-dotnet" commit="494323ba278e920ccf89c2e0f00eb8b6dc6b43c6" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.2">
+        <dependency id="System.Diagnostics.DiagnosticSource" version="7.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Diagnostics.DiagnosticSource" version="7.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

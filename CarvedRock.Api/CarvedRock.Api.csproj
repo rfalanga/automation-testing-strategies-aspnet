@@ -35,6 +35,7 @@
     <PackageReference Include="Serilog.Exceptions" Version="8.4.0" />
     <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.0" />
     <PackageReference Include="Serilog.Enrichers.Span" Version="3.1.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.23.0" />
     <!-- Keep Swashbuckle annotations out of net8 to avoid invoking openapi generation targets during multi-target builds -->
 
   </ItemGroup>

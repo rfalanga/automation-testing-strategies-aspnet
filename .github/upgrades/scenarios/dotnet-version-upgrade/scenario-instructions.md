@@ -17,6 +17,8 @@
 ## User Preferences
 ### Technical Preferences
 - **CarvedRock.WebApp**: Force single-target to net10.0 (user request)
+- **Package Priority**: Prioritize System.IdentityModel.Tokens.Jwt upgrade before SQLitePCLRaw.lib.e_sqlite3 (preference recorded 2026-09-19)
 
 ## Key Decisions Log
 - **2026-09-19**: User requested forcing CarvedRock.WebApp to single-target net10.0 to simplify app migration while maintaining backward compatibility for libraries via multi-targeting.
+- **2026-09-19**: User requested prioritizing System.IdentityModel.Tokens.Jwt upgrade before SQLitePCLRaw.lib.e_sqlite3.
