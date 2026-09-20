@@ -11,8 +11,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net10.0'">
-    <PackageReference Include="AutoMapper" Version="16.2.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.12" />
+    <!-- Per-TFM overrides can be added here when needed. Duplicated references were removed to avoid NU1504 warnings. -->
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarvedRock.Core\CarvedRock.Core.csproj" />

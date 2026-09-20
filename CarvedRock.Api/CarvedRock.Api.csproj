@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+  <!-- Placeholder update: no functional changes -->
 
   <!-- Skip OpenAPI document generation for net8.0 target to avoid tooling runtime issues during multi-target builds -->
   <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
