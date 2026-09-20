@@ -1,0 +1,9 @@
+D:\GitHub\automation-testing-strategies-aspnet\tests\CarvedRock.InnerLoop.Tests\TestResults\InnerLoopTests.trx
+D:\GitHub\automation-testing-strategies-aspnet\tests\CarvedRock.InnerLoop.Tests\TestResults\rodf_TARDIS_2026-09-19_16_29_05_net10.0.trx
+D:\GitHub\automation-testing-strategies-aspnet\tests\CarvedRock.InnerLoop.Tests\TestResults\rodf_TARDIS_2026-09-19_16_32_38_net10.0.trx
+D:\GitHub\automation-testing-strategies-aspnet\tests\CarvedRock.InnerLoop.Tests\TestResults\rodf_TARDIS_2026-09-19_19_21_14_net10.0.trx
+D:\GitHub\automation-testing-strategies-aspnet\tests\CarvedRock.InnerLoop.Tests\TestResults\rodf_TARDIS_2026-09-19_19_23_12_net10.0.trx
+D:\GitHub\automation-testing-strategies-aspnet\tests\CarvedRock.InnerLoop.Tests\TestResults\rodf_TARDIS_2026-09-19_19_24_32_net10.0.trx
+D:\GitHub\automation-testing-strategies-aspnet\tests\CarvedRock.InnerLoop.Tests\TestResults\TestResults.trx
+D:\GitHub\automation-testing-strategies-aspnet\tests\CarvedRock.InnerLoop.WebApp.Tests\TestResults\TestResults-filtered.trx
+D:\GitHub\automation-testing-strategies-aspnet\tests\CarvedRock.InnerLoop.WebApp.Tests\TestResults\TestResults.trx
